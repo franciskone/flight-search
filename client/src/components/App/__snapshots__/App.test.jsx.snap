@@ -8,14 +8,7 @@ exports[`App should render correctly 1`] = `
   <main
     className="App__main"
   >
-    <BpkText
-      bold={false}
-      className={null}
-      tagName="p"
-      textStyle="base"
-    >
-      Over to you...
-    </BpkText>
+    <SearchResults />
   </main>
 </div>
 `;

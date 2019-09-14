@@ -6,6 +6,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "test:update-snapshot": "react-scripts test --updateSnapshot --env=jsdom",
     "lint:scss": "stylelint 'src/**/*.scss' --syntax scss",
     "lint:scss:fix": "stylefmt --recursive 'src/**/*.scss'",
     "lint:js": "eslint . --ignore-path ./../.gitignore --ext .js,.jsx",
@@ -14,6 +15,7 @@
   },
   "devDependencies": {
     "backpack-react-scripts": "^5.1.1",
+    "bpk-component-icon": "^4.1.4",
     "bpk-component-text": "^1.0.54",
     "bpk-mixins": "^17.6.1",
     "bpk-stylesheets": "^3.2.100",

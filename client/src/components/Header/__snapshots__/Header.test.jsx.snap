@@ -18,5 +18,14 @@ exports[`Header should render correctly 1`] = `
       src="logo.svg"
     />
   </a>
+  <button
+    onClick={[Function]}
+  >
+    <img
+      alt="menu"
+      className="Header__menu-image"
+      src="burgerMenuIcon.svg"
+    />
+  </button>
 </header>
 `;

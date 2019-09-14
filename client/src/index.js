@@ -10,6 +10,8 @@ import App from './components/App';
 
 ReactDOM.render(React.createElement(App), document.getElementById('root'));
 
+// TODO Franciskone: remove this part
+
 // example api use
 // TODO put this call somewhere sensible
 // TODO send parameters to server - check out `server/src/live-pricing.js`

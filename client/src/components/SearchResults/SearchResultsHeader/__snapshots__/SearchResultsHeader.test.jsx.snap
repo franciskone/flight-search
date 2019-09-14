@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchResultsHeader component render should render correctly with cabin class 1`] = `
+<div
+  className="SearchResultsHeader"
+>
+  <div
+    className="SearchResultsHeader__top"
+  >
+    ori
+    <svg
+      className="SearchResultsHeader__arrow"
+      height="24"
+      style={
+        Object {
+          "height": "1.5rem",
+          "width": "1.5rem",
+        }
+      }
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M14.4 19.5l5.7-5.3c.4-.4.7-.9.8-1.5.1-.3.1-.5.1-.7s0-.4-.1-.6c-.1-.6-.4-1.1-.8-1.5l-5.7-5.3c-.8-.8-2.1-.7-2.8.1-.8.8-.7 2.1.1 2.8l2.7 2.5H5c-1.1 0-2 .9-2 2s.9 2 2 2h9.4l-2.7 2.5c-.5.4-.7 1-.7 1.5s.2 1 .5 1.4c.8.8 2.1.8 2.9.1z"
+      />
+    </svg>
+     
+    des
+  </div>
+  <div
+    className="SearchResultsHeader__bottom"
+  >
+    1 traveller, cabinclass
+  </div>
+</div>
+`;
+
+exports[`SearchResultsHeader component render should render correctly with cabin class and multiple travellers 1`] = `
+<div
+  className="SearchResultsHeader"
+>
+  <div
+    className="SearchResultsHeader__top"
+  >
+    ori
+    <svg
+      className="SearchResultsHeader__arrow"
+      height="24"
+      style={
+        Object {
+          "height": "1.5rem",
+          "width": "1.5rem",
+        }
+      }
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M14.4 19.5l5.7-5.3c.4-.4.7-.9.8-1.5.1-.3.1-.5.1-.7s0-.4-.1-.6c-.1-.6-.4-1.1-.8-1.5l-5.7-5.3c-.8-.8-2.1-.7-2.8.1-.8.8-.7 2.1.1 2.8l2.7 2.5H5c-1.1 0-2 .9-2 2s.9 2 2 2h9.4l-2.7 2.5c-.5.4-.7 1-.7 1.5s.2 1 .5 1.4c.8.8 2.1.8 2.9.1z"
+      />
+    </svg>
+     
+    des
+  </div>
+  <div
+    className="SearchResultsHeader__bottom"
+  >
+    2 travellers, cabinclass
+  </div>
+</div>
+`;
+
+exports[`SearchResultsHeader component render should render correctly without cabin class 1`] = `
+<div
+  className="SearchResultsHeader"
+>
+  <div
+    className="SearchResultsHeader__top"
+  >
+    ori
+    <svg
+      className="SearchResultsHeader__arrow"
+      height="24"
+      style={
+        Object {
+          "height": "1.5rem",
+          "width": "1.5rem",
+        }
+      }
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M14.4 19.5l5.7-5.3c.4-.4.7-.9.8-1.5.1-.3.1-.5.1-.7s0-.4-.1-.6c-.1-.6-.4-1.1-.8-1.5l-5.7-5.3c-.8-.8-2.1-.7-2.8.1-.8.8-.7 2.1.1 2.8l2.7 2.5H5c-1.1 0-2 .9-2 2s.9 2 2 2h9.4l-2.7 2.5c-.5.4-.7 1-.7 1.5s.2 1 .5 1.4c.8.8 2.1.8 2.9.1z"
+      />
+    </svg>
+     
+    des
+  </div>
+  <div
+    className="SearchResultsHeader__bottom"
+  >
+    1 traveller
+  </div>
+</div>
+`;

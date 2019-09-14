@@ -1,9 +1,12 @@
 import React from 'react';
 
+import burgerMenuIcon from './burgerMenuIcon.svg';
 import logo from './logo.svg';
 import STYLES from './Header.scss';
+import styleGetter from '../../util/style';
+import { fakeOnClick } from '../../util';
 
-const c = className => STYLES[className] || 'UNKNOWN';
+const c = styleGetter(STYLES);
 
 const Header = () => (
   <header className={c('Header')}>
@@ -11,7 +14,9 @@ const Header = () => (
       <span className={c('Header__hidden-text')}>Skyscanner</span>
       <img className={c('Header__logo-image')} alt="Skyscanner" src={logo} />
     </a>
-    {/* TODO burger menu icon */}
+    <button onClick={() => fakeOnClick('Menu icon')}>
+      <img className={c('Header__menu-image')} alt="menu" src={burgerMenuIcon} />
+    </button>
   </header>
 );
 

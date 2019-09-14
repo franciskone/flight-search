@@ -1,7 +1,6 @@
 @import '~bpk-mixins';
 
+// TODO Franciskone: understand if I still need this style
 .App {
-  &__main {
-    padding: $bpk-spacing-sm;
-  }
+  &__main {}
 }
