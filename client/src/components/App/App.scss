@@ -1,6 +1,10 @@
 @import '~bpk-mixins';
 
-// TODO Franciskone: understand if I still need this style
-.App {
-  &__main {}
+body {
+  background-color: $bpk-color-gray-50;
+}
+
+.App {  
+  &__main {
+  }
 }

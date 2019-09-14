@@ -10,12 +10,8 @@ import STYLE from './SearchResultsActions.scss';
 
 const c = styleGetter(STYLE);
 
-const AlignedPriceAlert = withAlignment(
-  BpkLargePriceAlertIcon, lineHeightLg, iconSizeLg,
-);
-
-const ActionItemOnKeyPress = action => evt =>
-  evt.charCode === 13 && action(); // TODO Franciskone: add test
+const actionItemOnKeyPress = action => evt =>
+  evt.charCode === 13 && acstion(); // TODO Franciskone: add test
 
 const ActionItem = ({
   action, children, isLast = false,
@@ -28,7 +24,7 @@ const ActionItem = ({
     }
     role="button"
     onClick={action}
-    onKeyPress={ActionItemOnKeyPress(action)}
+    onKeyPress={actionItemOnKeyPress(action)}
     tabIndex="0"
   >
     <BpkText textStyle="lg">{children}</BpkText>
@@ -43,6 +39,10 @@ ActionItem.defaultProps = {
   isLast: false,
 };
 
+const AlignedPriceAlert = withAlignment(
+  BpkLargePriceAlertIcon, lineHeightLg, iconSizeLg,
+);
+
 // TODO Franciskone: add redux actions to sort, filter and add price alert
 const SearchResultsActions = () => ( // TODO Franciskone: add snapshot test
   <div className={c('SearchResultsActions')}>
@@ -55,7 +55,9 @@ const SearchResultsActions = () => ( // TODO Franciskone: add snapshot test
     </ActionItem>
     
     <ActionItem action={() => fakeOnClick('Price Alert')} isLast>
-      <AlignedPriceAlert />
+      <AlignedPriceAlert
+        className={c('SearchResultsActions__alert-icon')}
+      />
       Price alerts
     </ActionItem>
   </div>
