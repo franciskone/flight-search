@@ -1,57 +1,63 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import BpkText from 'bpk-component-text';
+import { withAlignment } from 'bpk-component-icon';
+import { lineHeightLg, iconSizeLg } from 'bpk-tokens/tokens/base.es6';
+import BpkLargePriceAlertIcon from 'bpk-component-icon/lg/price-alerts';
 
 import { fakeOnClick, styleGetter } from '../../../util';
 import STYLE from './SearchResultsActions.scss';
-import SearchResultsHeader from '../SearchResultsHeader/SearchResultsHeader';
 
 const c = styleGetter(STYLE);
+
+const AlignedPriceAlert = withAlignment(
+  BpkLargePriceAlertIcon, lineHeightLg, iconSizeLg,
+);
 
 const ActionItemOnKeyPress = action => evt =>
   evt.charCode === 13 && action(); // TODO Franciskone: add test
 
-const ActionItem = ({ label, action, children }) => ( // TODO Franciskone: add snapshot test
+const ActionItem = ({
+  action, children, isLast = false,
+}) => ( // TODO Franciskone: add snapshot test
   <div
-    className={c('SearchResultsActions__action-item')}
+    className={c(
+      'SearchResultsActions__action-item',
+        { 'SearchResultsActions__action-item--is-last': isLast },
+      )
+    }
     role="button"
     onClick={action}
     onKeyPress={ActionItemOnKeyPress(action)}
     tabIndex="0"
   >
-    { children || <BpkText textStyle="lg">{label}</BpkText> }
+    <BpkText textStyle="lg">{children}</BpkText>
   </div>
 );
 ActionItem.propTypes = {
-  label: PropTypes.string,
   action: PropTypes.func.isRequired,
-  children: PropTypes.node,
+  children: PropTypes.node.isRequired,
+  isLast: PropTypes.bool,
 };
 ActionItem.defaultProps = {
-  label: null,
-  children: null,
+  isLast: false,
 };
 
 // TODO Franciskone: add redux actions to sort, filter and add price alert
-const SearchResultsActions = () => (
+const SearchResultsActions = () => ( // TODO Franciskone: add snapshot test
   <div className={c('SearchResultsActions')}>
-    <div className={c('SearchResultsActions__action-list')}>
-      <ActionItem
-        label="Filter"
-        action={() => fakeOnClick('Filter')}
-      />
-      <ActionItem
-        label="Sort"
-        action={() => fakeOnClick('Sort')}
-      />
-    </div>
-    <div className={c('SearchResultsActions__price-alert--right-padding')}>
-      <ActionItem
-        action={() => fakeOnClick('Price Alert')}
-      >
-        <BpkText textStyle="lg">Price alerts</BpkText>
-      </ActionItem>
-    </div>
+    <ActionItem action={() => fakeOnClick('Filter')}>
+      Filter
+    </ActionItem>
+    
+    <ActionItem action={() => fakeOnClick('Sort')}>
+      Sort
+    </ActionItem>
+    
+    <ActionItem action={() => fakeOnClick('Price Alert')} isLast>
+      <AlignedPriceAlert />
+      Price alerts
+    </ActionItem>
   </div>
 );
 

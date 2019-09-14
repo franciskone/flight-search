@@ -19,9 +19,13 @@
     "bpk-component-text": "^1.0.54",
     "bpk-mixins": "^17.6.1",
     "bpk-stylesheets": "^3.2.100",
+    "bpk-tokens": "^27.10.0",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "react-test-renderer": "^16.3.1"
   },
-  "proxy": "http://localhost:4000"
+  "proxy": "http://localhost:4000",
+  "dependencies": {
+    "classnames": "^2.2.6"
+  }
 }

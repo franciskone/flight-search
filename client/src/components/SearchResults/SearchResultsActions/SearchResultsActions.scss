@@ -6,15 +6,12 @@
   background-color: $bpk-color-white;
   color: $bpk-color-blue-500;
 
-  &__action-list {
-    display: flex;
-  }
   &__action-item {
-    &--right-padding {
-      margin-right: $bpk-spacing-xxl;
-    }
-  }
-  &__price-alert {
+    margin-right: $bpk-spacing-xxl;
 
+    &--is-last {
+      margin-right: $bpk-spacing-sm;
+      margin-left: auto;
+    }
   }
 }

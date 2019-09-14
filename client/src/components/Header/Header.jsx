@@ -15,6 +15,7 @@ const Header = () => (
       <img className={c('Header__logo-image')} alt="Skyscanner" src={logo} />
     </a>
     <button onClick={() => fakeOnClick('Menu icon')}>
+      {/* TODO Franciskone: switch to bkp-icon 'menu' */}
       <img className={c('Header__menu-image')} alt="menu" src={burgerMenuIcon} />
     </button>
   </header>

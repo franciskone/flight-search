@@ -1,2 +1,5 @@
-const styleGetter = style => className => style[className] || 'UNKNOWN'; // TODO Franciskone: add test
+import classNames from 'classnames/bind';
+
+const styleGetter = style => (...names) =>
+  classNames.bind(style)(...names); // TODO Franciskone: add test
 export default styleGetter;
