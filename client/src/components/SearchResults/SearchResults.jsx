@@ -4,6 +4,7 @@ import React from 'react';
 import STYLE from './SearchResults.scss';
 import { styleGetter } from '../../util';
 import SearchResultsHeader from './SearchResultsHeader';
+import SearchResultsActions from './SearchResultsActions';
 
 const c = styleGetter(STYLE);
 
@@ -15,6 +16,7 @@ const SearchResults = () => (
       passengers={1}
       cabinClass="economy"
     />
+    <SearchResultsActions />
   </div>
 );
 

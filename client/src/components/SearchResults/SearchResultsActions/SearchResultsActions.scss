@@ -1,0 +1,20 @@
+@import '~bpk-mixins';
+
+.SearchResultsActions {
+  display: flex;
+  padding: $bpk-spacing-sm;
+  background-color: $bpk-color-white;
+  color: $bpk-color-blue-500;
+
+  &__action-list {
+    display: flex;
+  }
+  &__action-item {
+    &--right-padding {
+      margin-right: $bpk-spacing-xxl;
+    }
+  }
+  &__price-alert {
+
+  }
+}
