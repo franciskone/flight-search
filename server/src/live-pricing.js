@@ -6,6 +6,8 @@ const querystring = require('querystring');
 
 const config = require('./config');
 
+const mockSearch = require('./mock/search'); // TODO Franciskone: DELETEs
+
 const PRICING_URL = `${config.skyscannerApi}apiservices/pricing/v1.0`;
 const POLL_DELAY = 1000;
 const STATUS_CODES = {
@@ -37,7 +39,7 @@ const createSession = async (params) => {
       const json = await response.json();
       throw new Error(JSON.stringify(json));
     }
-    console.log('Session created.');
+    console.log('Session created.');  
     // Location header contains URL to poll for results.
     return response.headers.get('location');
   } catch (err) {
@@ -78,10 +80,15 @@ const getResults = async (location) => {
   }
 };
 
+const USE_FAKE_DATA = true;
 const search = async (params) => {
   try {
-    const locationToPoll = await createSession(params);
-    return await getResults(locationToPoll);
+    if(USE_FAKE_DATA) { // TODO Franciskone: DELETE code in the If statement and use only the ELSE code
+      return await mockSearch.search();
+    } else {
+      const locationToPoll = await createSession(params);
+      return await getResults(locationToPoll);
+    }
   } catch (err) {
     throw err;
   }

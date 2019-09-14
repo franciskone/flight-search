@@ -25,13 +25,21 @@ app.get('/', (req, res) => {
   http://business.skyscanner.net/portal/en-GB/Documentation/FlightsLivePricingQuickStart
 */
 app.get('/api/search', async (req, res) => {
+  const {
+    originPlace,
+    destinationPlace,
+    outboundDate,
+    inboundDate,
+    adults,
+  } = req.query;
+  
   try {
     const reqParamsForSession = {
-      originPlace: 'EDI-sky',
-      destinationPlace: 'LOND-sky',
-      outboundDate: '2019-09-21',
-      inboundDate: '2019-09-28',
-      adults: 1,
+      originPlace,
+      destinationPlace,
+      outboundDate,
+      inboundDate,
+      adults,
     };
 
     const results = await livePricing.search(reqParamsForSession);
