@@ -26,13 +26,15 @@ app.get('/', (req, res) => {
 */
 app.get('/api/search', async (req, res) => {
   try {
-    const results = await livePricing.search({
-    /*
-     TODO: client to provide params.
-     Some params are already provided for you - see live-pricing.js.
-     Check API docs to see the other params you need to provide.
-     */
-    });
+    const reqParamsForSession = {
+      originPlace: 'EDI-sky',
+      destinationPlace: 'LOND-sky',
+      outboundDate: '2019-09-21',
+      inboundDate: '2019-09-28',
+      adults: 1,
+    };
+
+    const results = await livePricing.search(reqParamsForSession);
     // TODO - a better format for displaying results to the client
     console.log('TODO: transform results for consumption by client');
     res.json(results);

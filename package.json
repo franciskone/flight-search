@@ -8,6 +8,7 @@
     "client": "(cd ./client && npm start)",
     "build": "(cd ./client && npm run build)",
     "server": "(cd ./server && npm start)",
+    "server:watch": "(cd ./server && npm start:watch)",
     "pretest": "(cd ./client && npm run lint) && (cd ./server && npm run lint)",
     "test": "(cd ./client && CI=true npm test) && (cd ./server && CI=true npm test)",
     "start": "echo 'Did you mean `npm run server` or `npm run client`?'"

@@ -1,0 +1,1547 @@
+{
+  "Flights": {
+    "SessionKey": "6e5f755f-1af0-4d9b-a043-7c70603c6ae6",
+    "Query": {
+      "Country": "GB",
+      "Currency": "GBP",
+      "Locale": "en-GB",
+      "Adults": 1,
+      "Children": 0,
+      "Infants": 0,
+      "OriginPlace": "2343",
+      "DestinationPlace": "13554",
+      "OutboundDate": "2019-09-21",
+      "InboundDate": "2019-09-28",
+      "LocationSchema": "Default",
+      "CabinClass": "economy",
+      "GroupPricing": false
+    },
+    "Status": "UpdatesComplete",
+    "Itineraries": [
+      {
+        "OutboundLegId": {
+          "Id": "11235-1909211735--32302-0-13554-1909211915",
+          "SegmentIds": [
+            0
+          ],
+          "OriginStation": {
+            "Id": 11235,
+            "ParentId": 2343,
+            "Code": "EDI",
+            "Type": "Airport",
+            "Name": "Edinburgh"
+          },
+          "DestinationStation": {
+            "Id": 13554,
+            "ParentId": 4698,
+            "Code": "LHR",
+            "Type": "Airport",
+            "Name": "London Heathrow"
+          },
+          "Departure": "2019-09-21T17:35:00",
+          "Arrival": "2019-09-21T19:15:00",
+          "Duration": 100,
+          "JourneyMode": "Flight",
+          "Stops": [],
+          "Carriers": [
+            {
+              "Id": 885,
+              "Code": "BE",
+              "Name": "Flybe",
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/BE.png",
+              "DisplayCode": "BE"
+            }
+          ],
+          "OperatingCarriers": [
+            {
+              "Id": 885,
+              "Code": "BE",
+              "Name": "Flybe",
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/BE.png",
+              "DisplayCode": "BE"
+            }
+          ],
+          "Directionality": "Outbound",
+          "FlightNumbers": [
+            {
+              "FlightNumber": "2111",
+              "CarrierId": 885,
+              "Carrier": {
+                "Id": 885,
+                "Code": "BE",
+                "Name": "Flybe",
+                "ImageUrl": "https://s1.apideeplink.com/images/airlines/BE.png",
+                "DisplayCode": "BE"
+              }
+            }
+          ]
+        },
+        "InboundLegId": {
+          "Id": "13554-1909280940--32332-1-11235-1909290930",
+          "SegmentIds": [
+            1,
+            2
+          ],
+          "OriginStation": {
+            "Id": 13554,
+            "ParentId": 4698,
+            "Code": "LHR",
+            "Type": "Airport",
+            "Name": "London Heathrow"
+          },
+          "DestinationStation": {
+            "Id": 11235,
+            "ParentId": 2343,
+            "Code": "EDI",
+            "Type": "Airport",
+            "Name": "Edinburgh"
+          },
+          "Departure": "2019-09-28T09:40:00",
+          "Arrival": "2019-09-29T09:30:00",
+          "Duration": 1430,
+          "JourneyMode": "Flight",
+          "Stops": [
+            {
+              "Id": 10487,
+              "ParentId": 1775,
+              "Code": "CGN",
+              "Type": "Airport",
+              "Name": "Cologne"
+            }
+          ],
+          "Carriers": [
+            {
+              "Id": 1047,
+              "Code": "EW",
+              "Name": "eurowings",
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/EW.png",
+              "DisplayCode": "EW"
+            }
+          ],
+          "OperatingCarriers": [
+            {
+              "Id": 229,
+              "Code": "4U",
+              "Name": "germanwings",
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/4U.png",
+              "DisplayCode": "4U"
+            }
+          ],
+          "Directionality": "Inbound",
+          "FlightNumbers": [
+            {
+              "FlightNumber": "461",
+              "CarrierId": 1047,
+              "Carrier": {
+                "Id": 1047,
+                "Code": "EW",
+                "Name": "eurowings",
+                "ImageUrl": "https://s1.apideeplink.com/images/airlines/EW.png",
+                "DisplayCode": "EW"
+              }
+            },
+            {
+              "FlightNumber": "362",
+              "CarrierId": 1047,
+              "Carrier": {
+                "Id": 1047,
+                "Code": "EW",
+                "Name": "eurowings",
+                "ImageUrl": "https://s1.apideeplink.com/images/airlines/EW.png",
+                "DisplayCode": "EW"
+              }
+            }
+          ]
+        },
+        "PricingOptions": [
+          {
+            "Agents": [
+              {
+                "Id": 1963108,
+                "Name": "Mytrip",
+                "ImageUrl": "https://s1.apideeplink.com/images/websites/at24.png",
+                "Status": "UpdatesComplete",
+                "OptimisedForMobile": true,
+                "Type": "TravelAgent"
+              }
+            ],
+            "QuoteAgeInMinutes": 1,
+            "Price": 454.88,
+            "DeeplinkUrl": "http://partners.api.skyscanner.net/apiservices/deeplink/v2?_cje=zOm%2f6FCg6gDOE4rdoXmlE7hM3pD0U74mG5ftPhdP2gYHYNfl2GcrqQa0epbDDGLd&url=https%3a%2f%2fwww.skyscanner.net%2ftransport_deeplink%2f4.0%2fUK%2fen-GB%2fGBP%2fat24%2f2%2f11235.13554.2019-09-21%2c13554.11235.2019-09-28%2fair%2ftrava%2fflights%3fitinerary%3dflight%7c-32302%7c2111%7c11235%7c2019-09-21T17%3a35%7c13554%7c2019-09-21T19%3a15%7c100%7c-%7c-%7c-%2cflight%7c-32332%7c461%7c13554%7c2019-09-28T09%3a40%7c10487%7c2019-09-28T12%3a15%7c95%7c-%7c-%7c-%3bflight%7c-32332%7c362%7c10487%7c2019-09-29T08%3a40%7c11235%7c2019-09-29T09%3a30%7c110%7c-%7c-%7c-%26carriers%3d-32302%2c-32332%26operators%3d-32302%2c-32277%3b-32277%26passengers%3d1%26channel%3ddataapi%26cabin_class%3deconomy%26facilitated%3dfalse%26ticket_price%3d454.88%26is_npt%3dfalse%26is_multipart%3dfalse%26client_id%3dskyscanner_b2b%26q_ids%3dat24.11235.13554.190921.190928.1..E%7c-6857222905019200717%26q_sources%3dJACQUARD%26commercial_filters%3dfalse%26q_datetime_utc%3d2019-09-14T09%3a54%3a00%26pqid%3dfalse"
+          },
+          {
+            "Agents": [
+              {
+                "Id": 2628363,
+                "Name": "GotoGate",
+                "ImageUrl": "https://s1.apideeplink.com/images/websites/gtuk.png",
+                "Status": "UpdatesComplete",
+                "OptimisedForMobile": true,
+                "Type": "TravelAgent"
+              }
+            ],
+            "QuoteAgeInMinutes": 1,
+            "Price": 467.04,
+            "DeeplinkUrl": "http://partners.api.skyscanner.net/apiservices/deeplink/v2?_cje=zOm%2f6FCg6gDOE4rdoXmlE7hM3pD0U74mG5ftPhdP2gYHYNfl2GcrqQa0epbDDGLd&url=https%3a%2f%2fwww.skyscanner.net%2ftransport_deeplink%2f4.0%2fUK%2fen-GB%2fGBP%2fgtuk%2f2%2f11235.13554.2019-09-21%2c13554.11235.2019-09-28%2fair%2ftrava%2fflights%3fitinerary%3dflight%7c-32302%7c2111%7c11235%7c2019-09-21T17%3a35%7c13554%7c2019-09-21T19%3a15%7c100%7c-%7c-%7c-%2cflight%7c-32332%7c461%7c13554%7c2019-09-28T09%3a40%7c10487%7c2019-09-28T12%3a15%7c95%7c-%7c-%7c-%3bflight%7c-32332%7c362%7c10487%7c2019-09-29T08%3a40%7c11235%7c2019-09-29T09%3a30%7c110%7c-%7c-%7c-%26carriers%3d-32302%2c-32332%26operators%3d-32302%2c-32277%3b-32277%26passengers%3d1%26channel%3ddataapi%26cabin_class%3deconomy%26facilitated%3dfalse%26ticket_price%3d467.04%26is_npt%3dfalse%26is_multipart%3dfalse%26client_id%3dskyscanner_b2b%26q_ids%3dgtuk.11235.13554.190921.190928.1..E%7c-6857222905019200717%26q_sources%3dJACQUARD%26commercial_filters%3dfalse%26q_datetime_utc%3d2019-09-14T09%3a54%3a00%26pqid%3dfalse"
+          }
+        ],
+        "BookingDetailsLink": {
+          "Uri": "/apiservices/pricing/v1.0/6e5f755f-1af0-4d9b-a043-7c70603c6ae6/booking",
+          "Body": "OutboundLegId=11235-1909211735--32302-0-13554-1909211915&InboundLegId=13554-1909280940--32332-1-11235-1909290930",
+          "Method": "PUT"
+        },
+        "FormattedData": "Mytrip: 454.88 GBP GotoGate: 467.04 GBP"
+      },
+      {
+        "OutboundLegId": {
+          "Id": "11235-1909211705--32677-1-13554-1909212120",
+          "SegmentIds": [
+            3,
+            4
+          ],
+          "OriginStation": {
+            "Id": 11235,
+            "ParentId": 2343,
+            "Code": "EDI",
+            "Type": "Airport",
+            "Name": "Edinburgh"
+          },
+          "DestinationStation": {
+            "Id": 13554,
+            "ParentId": 4698,
+            "Code": "LHR",
+            "Type": "Airport",
+            "Name": "London Heathrow"
+          },
+          "Departure": "2019-09-21T17:05:00",
+          "Arrival": "2019-09-21T21:20:00",
+          "Duration": 255,
+          "JourneyMode": "Flight",
+          "Stops": [
+            {
+              "Id": 10413,
+              "ParentId": 6073,
+              "Code": "CDG",
+              "Type": "Airport",
+              "Name": "Paris Charles de Gaulle"
+            }
+          ],
+          "Carriers": [
+            {
+              "Id": 838,
+              "Code": "AF",
+              "Name": "Air France",
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/AF.png",
+              "DisplayCode": "AF"
+            }
+          ],
+          "OperatingCarriers": [
+            {
+              "Id": 838,
+              "Code": "AF",
+              "Name": "Air France",
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/AF.png",
+              "DisplayCode": "AF"
+            }
+          ],
+          "Directionality": "Outbound",
+          "FlightNumbers": [
+            {
+              "FlightNumber": "1487",
+              "CarrierId": 838,
+              "Carrier": {
+                "Id": 838,
+                "Code": "AF",
+                "Name": "Air France",
+                "ImageUrl": "https://s1.apideeplink.com/images/airlines/AF.png",
+                "DisplayCode": "AF"
+              }
+            },
+            {
+              "FlightNumber": "1380",
+              "CarrierId": 838,
+              "Carrier": {
+                "Id": 838,
+                "Code": "AF",
+                "Name": "Air France",
+                "ImageUrl": "https://s1.apideeplink.com/images/airlines/AF.png",
+                "DisplayCode": "AF"
+              }
+            }
+          ]
+        },
+        "InboundLegId": {
+          "Id": "13554-1909282110--32753-1-11235-1909290755",
+          "SegmentIds": [
+            5,
+            6
+          ],
+          "OriginStation": {
+            "Id": 13554,
+            "ParentId": 4698,
+            "Code": "LHR",
+            "Type": "Airport",
+            "Name": "London Heathrow"
+          },
+          "DestinationStation": {
+            "Id": 11235,
+            "ParentId": 2343,
+            "Code": "EDI",
+            "Type": "Airport",
+            "Name": "Edinburgh"
+          },
+          "Departure": "2019-09-28T21:10:00",
+          "Arrival": "2019-09-29T07:55:00",
+          "Duration": 645,
+          "JourneyMode": "Flight",
+          "Stops": [
+            {
+              "Id": 11154,
+              "ParentId": 2277,
+              "Code": "DUB",
+              "Type": "Airport",
+              "Name": "Dublin"
+            }
+          ],
+          "Carriers": [
+            {
+              "Id": 1033,
+              "Code": "EI",
+              "Name": "Aer Lingus",
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/EI.png",
+              "DisplayCode": "EI"
+            }
+          ],
+          "OperatingCarriers": [
+            {
+              "Id": 1033,
+              "Code": "EI",
+              "Name": "Aer Lingus",
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/EI.png",
+              "DisplayCode": "EI"
+            },
+            {
+              "Id": 1653,
+              "Code": "RE",
+              "Name": "Stobart Air",
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/RE.png",
+              "DisplayCode": "RE"
+            }
+          ],
+          "Directionality": "Inbound",
+          "FlightNumbers": [
+            {
+              "FlightNumber": "183",
+              "CarrierId": 1033,
+              "Carrier": {
+                "Id": 1033,
+                "Code": "EI",
+                "Name": "Aer Lingus",
+                "ImageUrl": "https://s1.apideeplink.com/images/airlines/EI.png",
+                "DisplayCode": "EI"
+              }
+            },
+            {
+              "FlightNumber": "3250",
+              "CarrierId": 1033,
+              "Carrier": {
+                "Id": 1033,
+                "Code": "EI",
+                "Name": "Aer Lingus",
+                "ImageUrl": "https://s1.apideeplink.com/images/airlines/EI.png",
+                "DisplayCode": "EI"
+              }
+            }
+          ]
+        },
+        "PricingOptions": [
+          {
+            "Agents": [
+              {
+                "Id": 2628363,
+                "Name": "GotoGate",
+                "ImageUrl": "https://s1.apideeplink.com/images/websites/gtuk.png",
+                "Status": "UpdatesComplete",
+                "OptimisedForMobile": true,
+                "Type": "TravelAgent"
+              }
+            ],
+            "QuoteAgeInMinutes": 1,
+            "Price": 454.96,
+            "DeeplinkUrl": "http://partners.api.skyscanner.net/apiservices/deeplink/v2?_cje=zOm%2f6FCg6gDOE4rdoXmlE7hM3pD0U74mG5ftPhdP2gYHYNfl2GcrqQa0epbDDGLd&url=https%3a%2f%2fwww.skyscanner.net%2ftransport_deeplink%2f4.0%2fUK%2fen-GB%2fGBP%2fgtuk%2f2%2f11235.13554.2019-09-21%2c13554.11235.2019-09-28%2fair%2ftrava%2fflights%3fitinerary%3dflight%7c-32677%7c1487%7c11235%7c2019-09-21T17%3a05%7c10413%7c2019-09-21T20%3a00%7c115%7c-%7c-%7c-%3bflight%7c-32677%7c1380%7c10413%7c2019-09-21T20%3a55%7c13554%7c2019-09-21T21%3a20%7c85%7c-%7c-%7c-%2cflight%7c-32753%7c183%7c13554%7c2019-09-28T21%3a10%7c11154%7c2019-09-28T22%3a30%7c80%7c-%7c-%7c-%3bflight%7c-32753%7c3250%7c11154%7c2019-09-29T06%3a40%7c11235%7c2019-09-29T07%3a55%7c75%7c-%7c-%7c-%26carriers%3d-32677%2c-32753%26operators%3d-32677%3b-32677%2c-32753%3b-32754%26passengers%3d1%26channel%3ddataapi%26cabin_class%3deconomy%26facilitated%3dfalse%26ticket_price%3d454.96%26is_npt%3dfalse%26is_multipart%3dfalse%26client_id%3dskyscanner_b2b%26q_ids%3dgtuk.11235.13554.190921.190928.1..E%7c1665175591833026183%26q_sources%3dJACQUARD%26commercial_filters%3dfalse%26q_datetime_utc%3d2019-09-14T09%3a54%3a00%26pqid%3dfalse"
+          }
+        ],
+        "BookingDetailsLink": {
+          "Uri": "/apiservices/pricing/v1.0/6e5f755f-1af0-4d9b-a043-7c70603c6ae6/booking",
+          "Body": "OutboundLegId=11235-1909211705--32677-1-13554-1909212120&InboundLegId=13554-1909282110--32753-1-11235-1909290755",
+          "Method": "PUT"
+        },
+        "FormattedData": "GotoGate: 454.96 GBP"
+      },
+      {
+        "OutboundLegId": {
+          "Id": "11235-1909210715--32480-0-13554-1909210850",
+          "SegmentIds": [
+            7
+          ],
+          "OriginStation": {
+            "Id": 11235,
+            "ParentId": 2343,
+            "Code": "EDI",
+            "Type": "Airport",
+            "Name": "Edinburgh"
+          },
+          "DestinationStation": {
+            "Id": 13554,
+            "ParentId": 4698,
+            "Code": "LHR",
+            "Type": "Airport",
+            "Name": "London Heathrow"
+          },
+          "Departure": "2019-09-21T07:15:00",
+          "Arrival": "2019-09-21T08:50:00",
+          "Duration": 95,
+          "JourneyMode": "Flight",
+          "Stops": [],
+          "Carriers": [
+            {
+              "Id": 881,
+              "Code": "BA",
+              "Name": "British Airways",
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/BA.png",
+              "DisplayCode": "BA"
+            }
+          ],
+          "OperatingCarriers": [
+            {
+              "Id": 881,
+              "Code": "BA",
+              "Name": "British Airways",
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/BA.png",
+              "DisplayCode": "BA"
+            }
+          ],
+          "Directionality": "Outbound",
+          "FlightNumbers": [
+            {
+              "FlightNumber": "1461",
+              "CarrierId": 881,
+              "Carrier": {
+                "Id": 881,
+                "Code": "BA",
+                "Name": "British Airways",
+                "ImageUrl": "https://s1.apideeplink.com/images/airlines/BA.png",
+                "DisplayCode": "BA"
+              }
+            }
+          ]
+        },
+        "InboundLegId": {
+          "Id": "13554-1909281140--32480-0-11235-1909281305",
+          "SegmentIds": [
+            8
+          ],
+          "OriginStation": {
+            "Id": 13554,
+            "ParentId": 4698,
+            "Code": "LHR",
+            "Type": "Airport",
+            "Name": "London Heathrow"
+          },
+          "DestinationStation": {
+            "Id": 11235,
+            "ParentId": 2343,
+            "Code": "EDI",
+            "Type": "Airport",
+            "Name": "Edinburgh"
+          },
+          "Departure": "2019-09-28T11:40:00",
+          "Arrival": "2019-09-28T13:05:00",
+          "Duration": 85,
+          "JourneyMode": "Flight",
+          "Stops": [],
+          "Carriers": [
+            {
+              "Id": 881,
+              "Code": "BA",
+              "Name": "British Airways",
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/BA.png",
+              "DisplayCode": "BA"
+            }
+          ],
+          "OperatingCarriers": [
+            {
+              "Id": 881,
+              "Code": "BA",
+              "Name": "British Airways",
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/BA.png",
+              "DisplayCode": "BA"
+            }
+          ],
+          "Directionality": "Inbound",
+          "FlightNumbers": [
+            {
+              "FlightNumber": "1442",
+              "CarrierId": 881,
+              "Carrier": {
+                "Id": 881,
+                "Code": "BA",
+                "Name": "British Airways",
+                "ImageUrl": "https://s1.apideeplink.com/images/airlines/BA.png",
+                "DisplayCode": "BA"
+              }
+            }
+          ]
+        },
+        "PricingOptions": [
+          {
+            "Agents": [
+              {
+                "Id": 2032127,
+                "Name": "British Airways",
+                "ImageUrl": "https://s1.apideeplink.com/images/websites/ba__.png",
+                "Status": "UpdatesComplete",
+                "OptimisedForMobile": true,
+                "Type": "Airline"
+              }
+            ],
+            "QuoteAgeInMinutes": 1,
+            "Price": 514.05,
+            "DeeplinkUrl": "http://partners.api.skyscanner.net/apiservices/deeplink/v2?_cje=zOm%2f6FCg6gDOE4rdoXmlE7hM3pD0U74mG5ftPhdP2gYHYNfl2GcrqQa0epbDDGLd&url=https%3a%2f%2fwww.skyscanner.net%2ftransport_deeplink%2f4.0%2fUK%2fen-GB%2fGBP%2fba__%2f2%2f11235.13554.2019-09-21%2c13554.11235.2019-09-28%2fair%2fairli%2fflights%3fitinerary%3dflight%7c-32480%7c1461%7c11235%7c2019-09-21T07%3a15%7c13554%7c2019-09-21T08%3a50%7c95%7cHZ0R%7cH%7cBasic%2cflight%7c-32480%7c1442%7c13554%7c2019-09-28T11%3a40%7c11235%7c2019-09-28T13%3a05%7c85%7cYV3R%7cY%7cPlus+Flex%26carriers%3d-32480%26operators%3d-32480%2c-32480%26passengers%3d1%26channel%3ddataapi%26cabin_class%3deconomy%26facilitated%3dtrue%26ticket_price%3d514.05%26is_npt%3dfalse%26is_multipart%3dfalse%26client_id%3dskyscanner_b2b%26q_ids%3dba__.11235.13554.190921.190928.1..E%7c8325415227328108859%26q_sources%3dJACQUARD%26commercial_filters%3dfalse%26q_datetime_utc%3d2019-09-14T09%3a54%3a00%26source_website_id%3damac%26pqid%3dfalse"
+          },
+          {
+            "Agents": [
+              {
+                "Id": 4499211,
+                "Name": "Expedia",
+                "ImageUrl": "https://s1.apideeplink.com/images/websites/xpuk.png",
+                "Status": "UpdatesComplete",
+                "OptimisedForMobile": true,
+                "Type": "TravelAgent"
+              }
+            ],
+            "QuoteAgeInMinutes": 1,
+            "Price": 517.05,
+            "DeeplinkUrl": "http://partners.api.skyscanner.net/apiservices/deeplink/v2?_cje=zOm%2f6FCg6gDOE4rdoXmlE7hM3pD0U74mG5ftPhdP2gYHYNfl2GcrqQa0epbDDGLd&url=https%3a%2f%2fwww.skyscanner.net%2ftransport_deeplink%2f4.0%2fUK%2fen-GB%2fGBP%2fxpuk%2f2%2f11235.13554.2019-09-21%2c13554.11235.2019-09-28%2fair%2ftrava%2fflights%3fitinerary%3dflight%7c-32480%7c1461%7c11235%7c2019-09-21T07%3a15%7c13554%7c2019-09-21T08%3a50%7c95%7cHZ0R%7cH%7c-%2cflight%7c-32480%7c1442%7c13554%7c2019-09-28T11%3a40%7c11235%7c2019-09-28T13%3a05%7c85%7cYV3R%7cY%7c-%26carriers%3d-32480%26operators%3d-32480%2c-32480%26passengers%3d1%26channel%3ddataapi%26cabin_class%3deconomy%26facilitated%3dfalse%26ticket_price%3d517.05%26is_npt%3dfalse%26is_multipart%3dfalse%26client_id%3dskyscanner_b2b%26q_ids%3dxpuk.11235.13554.190921.190928.1..E%7c6269430493259407440%26q_sources%3dJACQUARD%26commercial_filters%3dfalse%26q_datetime_utc%3d2019-09-14T09%3a54%3a00%26pqid%3dfalse"
+          },
+          {
+            "Agents": [
+              {
+                "Id": 2365707,
+                "Name": "ebookers",
+                "ImageUrl": "https://s1.apideeplink.com/images/websites/ebuk.png",
+                "Status": "UpdatesComplete",
+                "OptimisedForMobile": true,
+                "Type": "TravelAgent"
+              }
+            ],
+            "QuoteAgeInMinutes": 1,
+            "Price": 520.05,
+            "DeeplinkUrl": "http://partners.api.skyscanner.net/apiservices/deeplink/v2?_cje=zOm%2f6FCg6gDOE4rdoXmlE7hM3pD0U74mG5ftPhdP2gYHYNfl2GcrqQa0epbDDGLd&url=https%3a%2f%2fwww.skyscanner.net%2ftransport_deeplink%2f4.0%2fUK%2fen-GB%2fGBP%2febuk%2f2%2f11235.13554.2019-09-21%2c13554.11235.2019-09-28%2fair%2ftrava%2fflights%3fitinerary%3dflight%7c-32480%7c1461%7c11235%7c2019-09-21T07%3a15%7c13554%7c2019-09-21T08%3a50%7c95%7cHZ0R%7cH%7c-%2cflight%7c-32480%7c1442%7c13554%7c2019-09-28T11%3a40%7c11235%7c2019-09-28T13%3a05%7c85%7cYV3R%7cY%7c-%26carriers%3d-32480%26operators%3d-32480%2c-32480%26passengers%3d1%26channel%3ddataapi%26cabin_class%3deconomy%26facilitated%3dfalse%26ticket_price%3d520.05%26is_npt%3dfalse%26is_multipart%3dfalse%26client_id%3dskyscanner_b2b%26q_ids%3debuk.11235.4698.190921.190928.1..E%7c6269430493259407440%26q_sources%3dJACQUARD%26commercial_filters%3dfalse%26q_datetime_utc%3d2019-09-14T09%3a54%3a00%26pqid%3dfalse"
+          },
+          {
+            "Agents": [
+              {
+                "Id": 2185995,
+                "Name": "Trip.com",
+                "ImageUrl": "https://s1.apideeplink.com/images/websites/ctuk.png",
+                "Status": "UpdatesComplete",
+                "OptimisedForMobile": true,
+                "Type": "TravelAgent"
+              }
+            ],
+            "QuoteAgeInMinutes": 1,
+            "Price": 538,
+            "DeeplinkUrl": "http://partners.api.skyscanner.net/apiservices/deeplink/v2?_cje=zOm%2f6FCg6gDOE4rdoXmlE7hM3pD0U74mG5ftPhdP2gYHYNfl2GcrqQa0epbDDGLd&url=https%3a%2f%2fwww.skyscanner.net%2ftransport_deeplink%2f4.0%2fUK%2fen-GB%2fGBP%2fctuk%2f2%2f11235.13554.2019-09-21%2c13554.11235.2019-09-28%2fair%2ftrava%2fflights%3fitinerary%3dflight%7c-32480%7c1461%7c11235%7c2019-09-21T07%3a15%7c13554%7c2019-09-21T08%3a50%7c95%7c-%7c-%7c-%2cflight%7c-32480%7c1442%7c13554%7c2019-09-28T11%3a40%7c11235%7c2019-09-28T13%3a05%7c85%7c-%7c-%7c-%26carriers%3d-32480%26operators%3d-32480%2c-32480%26passengers%3d1%26channel%3ddataapi%26cabin_class%3deconomy%26facilitated%3dtrue%26ticket_price%3d538.00%26is_npt%3dfalse%26is_multipart%3dfalse%26client_id%3dskyscanner_b2b%26q_ids%3dctuk.11235.4698.190921.190928.1..E%7c-73513723518860496%26q_sources%3dJACQUARD%26commercial_filters%3dfalse%26q_datetime_utc%3d2019-09-14T09%3a54%3a00%26pqid%3dfalse"
+          },
+          {
+            "Agents": [
+              {
+                "Id": 3874827,
+                "Name": "BudgetAir",
+                "ImageUrl": "https://s1.apideeplink.com/images/websites/s1uk.png",
+                "Status": "UpdatesComplete",
+                "OptimisedForMobile": true,
+                "Type": "TravelAgent"
+              }
+            ],
+            "QuoteAgeInMinutes": 1,
+            "Price": 542,
+            "DeeplinkUrl": "http://partners.api.skyscanner.net/apiservices/deeplink/v2?_cje=zOm%2f6FCg6gDOE4rdoXmlE7hM3pD0U74mG5ftPhdP2gYHYNfl2GcrqQa0epbDDGLd&url=https%3a%2f%2fwww.skyscanner.net%2ftransport_deeplink%2f4.0%2fUK%2fen-GB%2fGBP%2fs1uk%2f2%2f11235.13554.2019-09-21%2c13554.11235.2019-09-28%2fair%2ftrava%2fflights%3fitinerary%3dflight%7c-32480%7c1461%7c11235%7c2019-09-21T07%3a15%7c13554%7c2019-09-21T08%3a50%7c95%7c-%7c-%7c-%2cflight%7c-32480%7c1442%7c13554%7c2019-09-28T11%3a40%7c11235%7c2019-09-28T13%3a05%7c85%7c-%7c-%7c-%26carriers%3d-32480%26operators%3d-32480%2c-32480%26passengers%3d1%26channel%3ddataapi%26cabin_class%3deconomy%26facilitated%3dfalse%26ticket_price%3d542.00%26is_npt%3dfalse%26is_multipart%3dfalse%26client_id%3dskyscanner_b2b%26q_ids%3ds1uk.11235.13554.190921.190928.1..E%7c-73513723518860496%26q_sources%3dJACQUARD%26commercial_filters%3dfalse%26q_datetime_utc%3d2019-09-14T09%3a54%3a00%26pqid%3dfalse"
+          },
+          {
+            "Agents": [
+              {
+                "Id": 3503883,
+                "Name": "Opodo",
+                "ImageUrl": "https://s1.apideeplink.com/images/websites/opuk.png",
+                "Status": "UpdatesComplete",
+                "OptimisedForMobile": true,
+                "Type": "TravelAgent"
+              }
+            ],
+            "QuoteAgeInMinutes": 1,
+            "Price": 543.9,
+            "DeeplinkUrl": "http://partners.api.skyscanner.net/apiservices/deeplink/v2?_cje=zOm%2f6FCg6gDOE4rdoXmlE7hM3pD0U74mG5ftPhdP2gYHYNfl2GcrqQa0epbDDGLd&url=https%3a%2f%2fwww.skyscanner.net%2ftransport_deeplink%2f4.0%2fUK%2fen-GB%2fGBP%2fopuk%2f2%2f11235.13554.2019-09-21%2c13554.11235.2019-09-28%2fair%2ftrava%2fflights%3fitinerary%3dflight%7c-32480%7c1461%7c11235%7c2019-09-21T07%3a15%7c13554%7c2019-09-21T08%3a50%7c95%7c-%7c-%7c-%2cflight%7c-32480%7c1442%7c13554%7c2019-09-28T11%3a40%7c11235%7c2019-09-28T13%3a05%7c85%7c-%7c-%7c-%26carriers%3d-32480%26operators%3d-32480%2c-32480%26passengers%3d1%26channel%3ddataapi%26cabin_class%3deconomy%26facilitated%3dfalse%26ticket_price%3d543.90%26is_npt%3dfalse%26is_multipart%3dfalse%26client_id%3dskyscanner_b2b%26q_ids%3dopuk.11235.13554.190921.190928.1..E%7c-73513723518860496%26q_sources%3dJACQUARD%26commercial_filters%3dfalse%26q_datetime_utc%3d2019-09-14T09%3a54%3a00%26pqid%3dfalse"
+          },
+          {
+            "Agents": [
+              {
+                "Id": 2370315,
+                "Name": "eDreams",
+                "ImageUrl": "https://s1.apideeplink.com/images/websites/eduk.png",
+                "Status": "UpdatesComplete",
+                "OptimisedForMobile": true,
+                "Type": "TravelAgent"
+              }
+            ],
+            "QuoteAgeInMinutes": 1,
+            "Price": 550.77,
+            "DeeplinkUrl": "http://partners.api.skyscanner.net/apiservices/deeplink/v2?_cje=zOm%2f6FCg6gDOE4rdoXmlE7hM3pD0U74mG5ftPhdP2gYHYNfl2GcrqQa0epbDDGLd&url=https%3a%2f%2fwww.skyscanner.net%2ftransport_deeplink%2f4.0%2fUK%2fen-GB%2fGBP%2feduk%2f2%2f11235.13554.2019-09-21%2c13554.11235.2019-09-28%2fair%2ftrava%2fflights%3fitinerary%3dflight%7c-32480%7c1461%7c11235%7c2019-09-21T07%3a15%7c13554%7c2019-09-21T08%3a50%7c95%7c-%7c-%7c-%2cflight%7c-32480%7c1442%7c13554%7c2019-09-28T11%3a40%7c11235%7c2019-09-28T13%3a05%7c85%7c-%7c-%7c-%26carriers%3d-32480%26operators%3d-32480%2c-32480%26passengers%3d1%26channel%3ddataapi%26cabin_class%3deconomy%26facilitated%3dfalse%26ticket_price%3d550.77%26is_npt%3dfalse%26is_multipart%3dfalse%26client_id%3dskyscanner_b2b%26q_ids%3deduk.11235.13554.190921.190928.1..E%7c-73513723518860496%26q_sources%3dJACQUARD%26commercial_filters%3dfalse%26q_datetime_utc%3d2019-09-14T09%3a54%3a00%26pqid%3dfalse"
+          },
+          {
+            "Agents": [
+              {
+                "Id": 3934928,
+                "Name": "Kiwi.com",
+                "ImageUrl": "https://s1.apideeplink.com/images/websites/skyp.png",
+                "Status": "UpdatesComplete",
+                "OptimisedForMobile": true,
+                "Type": "TravelAgent"
+              }
+            ],
+            "QuoteAgeInMinutes": 1,
+            "Price": 611,
+            "DeeplinkUrl": "http://partners.api.skyscanner.net/apiservices/deeplink/v2?_cje=zOm%2f6FCg6gDOE4rdoXmlE7hM3pD0U74mG5ftPhdP2gYHYNfl2GcrqQa0epbDDGLd&url=https%3a%2f%2fwww.skyscanner.net%2ftransport_deeplink%2f4.0%2fUK%2fen-GB%2fGBP%2fskyp%2f2%2f11235.13554.2019-09-21%2c13554.11235.2019-09-28%2fair%2ftrava%2fflights%3fitinerary%3dflight%7c-32480%7c1461%7c11235%7c2019-09-21T07%3a15%7c13554%7c2019-09-21T08%3a50%7c95%7cGW6Z0R%7cG%7c-%2cflight%7c-32480%7c1442%7c13554%7c2019-09-28T11%3a40%7c11235%7c2019-09-28T13%3a05%7c85%7cYV3R%7cY%7c-%26carriers%3d-32480%26operators%3d-32480%2c-32480%26passengers%3d1%26channel%3ddataapi%26cabin_class%3deconomy%26facilitated%3dtrue%26ticket_price%3d611.00%26is_npt%3dfalse%26is_multipart%3dfalse%26client_id%3dskyscanner_b2b%26q_ids%3dskyp.11235.13554.190921.190928.1..E%7c-6564574061739407387%26q_sources%3dJACQUARD%26commercial_filters%3dfalse%26q_datetime_utc%3d2019-09-14T09%3a54%3a00%26pqid%3dfalse"
+          }
+        ],
+        "BookingDetailsLink": {
+          "Uri": "/apiservices/pricing/v1.0/6e5f755f-1af0-4d9b-a043-7c70603c6ae6/booking",
+          "Body": "OutboundLegId=11235-1909210715--32480-0-13554-1909210850&InboundLegId=13554-1909281140--32480-0-11235-1909281305",
+          "Method": "PUT"
+        },
+        "FormattedData": "British Airways: 514.05 GBP Expedia: 517.05 GBP ebookers: 520.05 GBP Trip.com: 538 GBP BudgetAir: 542 GBP Opodo: 543.9 GBP eDreams: 550.77 GBP Kiwi.com: 611 GBP"
+      },
+      {
+        "OutboundLegId": {
+          "Id": "11235-1909211735--32302-0-13554-1909211915",
+          "SegmentIds": [
+            0
+          ],
+          "OriginStation": {
+            "Id": 11235,
+            "ParentId": 2343,
+            "Code": "EDI",
+            "Type": "Airport",
+            "Name": "Edinburgh"
+          },
+          "DestinationStation": {
+            "Id": 13554,
+            "ParentId": 4698,
+            "Code": "LHR",
+            "Type": "Airport",
+            "Name": "London Heathrow"
+          },
+          "Departure": "2019-09-21T17:35:00",
+          "Arrival": "2019-09-21T19:15:00",
+          "Duration": 100,
+          "JourneyMode": "Flight",
+          "Stops": [],
+          "Carriers": [
+            {
+              "Id": 885,
+              "Code": "BE",
+              "Name": "Flybe",
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/BE.png",
+              "DisplayCode": "BE"
+            }
+          ],
+          "OperatingCarriers": [
+            {
+              "Id": 885,
+              "Code": "BE",
+              "Name": "Flybe",
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/BE.png",
+              "DisplayCode": "BE"
+            }
+          ],
+          "Directionality": "Outbound",
+          "FlightNumbers": [
+            {
+              "FlightNumber": "2111",
+              "CarrierId": 885,
+              "Carrier": {
+                "Id": 885,
+                "Code": "BE",
+                "Name": "Flybe",
+                "ImageUrl": "https://s1.apideeplink.com/images/airlines/BE.png",
+                "DisplayCode": "BE"
+              }
+            }
+          ]
+        },
+        "InboundLegId": {
+          "Id": "13554-1909281710--32132-1-11235-1909282135",
+          "SegmentIds": [
+            9,
+            10
+          ],
+          "OriginStation": {
+            "Id": 13554,
+            "ParentId": 4698,
+            "Code": "LHR",
+            "Type": "Airport",
+            "Name": "London Heathrow"
+          },
+          "DestinationStation": {
+            "Id": 11235,
+            "ParentId": 2343,
+            "Code": "EDI",
+            "Type": "Airport",
+            "Name": "Edinburgh"
+          },
+          "Departure": "2019-09-28T17:10:00",
+          "Arrival": "2019-09-28T21:35:00",
+          "Duration": 265,
+          "JourneyMode": "Flight",
+          "Stops": [
+            {
+              "Id": 9451,
+              "ParentId": 509,
+              "Code": "AMS",
+              "Type": "Airport",
+              "Name": "Amsterdam"
+            }
+          ],
+          "Carriers": [
+            {
+              "Id": 1324,
+              "Code": "KL",
+              "Name": "KLM",
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/KL.png",
+              "DisplayCode": "KL"
+            }
+          ],
+          "OperatingCarriers": [
+            {
+              "Id": 1324,
+              "Code": "KL",
+              "Name": "KLM",
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/KL.png",
+              "DisplayCode": "KL"
+            }
+          ],
+          "Directionality": "Inbound",
+          "FlightNumbers": [
+            {
+              "FlightNumber": "1022",
+              "CarrierId": 1324,
+              "Carrier": {
+                "Id": 1324,
+                "Code": "KL",
+                "Name": "KLM",
+                "ImageUrl": "https://s1.apideeplink.com/images/airlines/KL.png",
+                "DisplayCode": "KL"
+              }
+            },
+            {
+              "FlightNumber": "1293",
+              "CarrierId": 1324,
+              "Carrier": {
+                "Id": 1324,
+                "Code": "KL",
+                "Name": "KLM",
+                "ImageUrl": "https://s1.apideeplink.com/images/airlines/KL.png",
+                "DisplayCode": "KL"
+              }
+            }
+          ]
+        },
+        "PricingOptions": [
+          {
+            "Agents": [
+              {
+                "Id": 1963108,
+                "Name": "Mytrip",
+                "ImageUrl": "https://s1.apideeplink.com/images/websites/at24.png",
+                "Status": "UpdatesComplete",
+                "OptimisedForMobile": true,
+                "Type": "TravelAgent"
+              }
+            ],
+            "QuoteAgeInMinutes": 1,
+            "Price": 438.01,
+            "DeeplinkUrl": "http://partners.api.skyscanner.net/apiservices/deeplink/v2?_cje=zOm%2f6FCg6gDOE4rdoXmlE7hM3pD0U74mG5ftPhdP2gYHYNfl2GcrqQa0epbDDGLd&url=https%3a%2f%2fwww.skyscanner.net%2ftransport_deeplink%2f4.0%2fUK%2fen-GB%2fGBP%2fat24%2f2%2f11235.13554.2019-09-21%2c13554.11235.2019-09-28%2fair%2ftrava%2fflights%3fitinerary%3dflight%7c-32302%7c2111%7c11235%7c2019-09-21T17%3a35%7c13554%7c2019-09-21T19%3a15%7c100%7c-%7c-%7c-%2cflight%7c-32132%7c1022%7c13554%7c2019-09-28T17%3a10%7c9451%7c2019-09-28T19%3a35%7c85%7c-%7c-%7c-%3bflight%7c-32132%7c1293%7c9451%7c2019-09-28T21%3a10%7c11235%7c2019-09-28T21%3a35%7c85%7c-%7c-%7c-%26carriers%3d-32302%2c-32132%26operators%3d-32302%2c-32132%3b-32132%26passengers%3d1%26channel%3ddataapi%26cabin_class%3deconomy%26facilitated%3dfalse%26ticket_price%3d438.01%26is_npt%3dfalse%26is_multipart%3dfalse%26client_id%3dskyscanner_b2b%26q_ids%3dat24.11235.13554.190921.190928.1..E%7c-1692208906270147888%26q_sources%3dJACQUARD%26commercial_filters%3dfalse%26q_datetime_utc%3d2019-09-14T09%3a54%3a00%26pqid%3dfalse"
+          },
+          {
+            "Agents": [
+              {
+                "Id": 3165195,
+                "Name": "lastminute.com",
+                "ImageUrl": "https://s1.apideeplink.com/images/websites/lmuk.png",
+                "Status": "UpdatesComplete",
+                "OptimisedForMobile": true,
+                "Type": "TravelAgent"
+              }
+            ],
+            "QuoteAgeInMinutes": 1,
+            "Price": 444.99,
+            "DeeplinkUrl": "http://partners.api.skyscanner.net/apiservices/deeplink/v2?_cje=zOm%2f6FCg6gDOE4rdoXmlE7hM3pD0U74mG5ftPhdP2gYHYNfl2GcrqQa0epbDDGLd&url=https%3a%2f%2fwww.skyscanner.net%2ftransport_deeplink%2f4.0%2fUK%2fen-GB%2fGBP%2flmuk%2f2%2f11235.13554.2019-09-21%2c13554.11235.2019-09-28%2fair%2ftrava%2fflights%3fitinerary%3dflight%7c-32302%7c2111%7c11235%7c2019-09-21T17%3a35%7c13554%7c2019-09-21T19%3a15%7c100%7cYFLY1H%7cY%7c-%2cflight%7c-32132%7c1022%7c13554%7c2019-09-28T17%3a10%7c9451%7c2019-09-28T19%3a35%7c85%7cASRGB%7cA%7c-%3bflight%7c-32132%7c1293%7c9451%7c2019-09-28T21%3a10%7c11235%7c2019-09-28T21%3a35%7c85%7cRSRGB%7cR%7c-%26carriers%3d-32302%2c-32132%26operators%3d-32302%2c-32132%3b-32132%26passengers%3d1%26channel%3ddataapi%26cabin_class%3deconomy%26facilitated%3dfalse%26ticket_price%3d444.99%26is_npt%3dfalse%26is_multipart%3dfalse%26client_id%3dskyscanner_b2b%26q_ids%3dlmuk.11235.13554.190921.190928.1..E%7c384831910972472628%26q_sources%3dJACQUARD%26commercial_filters%3dfalse%26q_datetime_utc%3d2019-09-14T09%3a54%3a00%26pqid%3dfalse"
+          }
+        ],
+        "BookingDetailsLink": {
+          "Uri": "/apiservices/pricing/v1.0/6e5f755f-1af0-4d9b-a043-7c70603c6ae6/booking",
+          "Body": "OutboundLegId=11235-1909211735--32302-0-13554-1909211915&InboundLegId=13554-1909281710--32132-1-11235-1909282135",
+          "Method": "PUT"
+        },
+        "FormattedData": "Mytrip: 438.01 GBP lastminute.com: 444.99 GBP"
+      },
+      {
+        "OutboundLegId": {
+          "Id": "11235-1909211615--32753,-32480-1-13554-1909212020",
+          "SegmentIds": [
+            11,
+            12
+          ],
+          "OriginStation": {
+            "Id": 11235,
+            "ParentId": 2343,
+            "Code": "EDI",
+            "Type": "Airport",
+            "Name": "Edinburgh"
+          },
+          "DestinationStation": {
+            "Id": 13554,
+            "ParentId": 4698,
+            "Code": "LHR",
+            "Type": "Airport",
+            "Name": "London Heathrow"
+          },
+          "Departure": "2019-09-21T16:15:00",
+          "Arrival": "2019-09-21T20:20:00",
+          "Duration": 245,
+          "JourneyMode": "Flight",
+          "Stops": [
+            {
+              "Id": 11154,
+              "ParentId": 2277,
+              "Code": "DUB",
+              "Type": "Airport",
+              "Name": "Dublin"
+            }
+          ],
+          "Carriers": [
+            {
+              "Id": 1033,
+              "Code": "EI",
+              "Name": "Aer Lingus",
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/EI.png",
+              "DisplayCode": "EI"
+            },
+            {
+              "Id": 881,
+              "Code": "BA",
+              "Name": "British Airways",
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/BA.png",
+              "DisplayCode": "BA"
+            }
+          ],
+          "OperatingCarriers": [
+            {
+              "Id": 1653,
+              "Code": "RE",
+              "Name": "Stobart Air",
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/RE.png",
+              "DisplayCode": "RE"
+            },
+            {
+              "Id": 1033,
+              "Code": "EI",
+              "Name": "Aer Lingus",
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/EI.png",
+              "DisplayCode": "EI"
+            }
+          ],
+          "Directionality": "Outbound",
+          "FlightNumbers": [
+            {
+              "FlightNumber": "3257",
+              "CarrierId": 1033,
+              "Carrier": {
+                "Id": 1033,
+                "Code": "EI",
+                "Name": "Aer Lingus",
+                "ImageUrl": "https://s1.apideeplink.com/images/airlines/EI.png",
+                "DisplayCode": "EI"
+              }
+            },
+            {
+              "FlightNumber": "5970",
+              "CarrierId": 881,
+              "Carrier": {
+                "Id": 881,
+                "Code": "BA",
+                "Name": "British Airways",
+                "ImageUrl": "https://s1.apideeplink.com/images/airlines/BA.png",
+                "DisplayCode": "BA"
+              }
+            }
+          ]
+        },
+        "InboundLegId": {
+          "Id": "13554-1909281710--32132-1-11235-1909282135",
+          "SegmentIds": [
+            9,
+            10
+          ],
+          "OriginStation": {
+            "Id": 13554,
+            "ParentId": 4698,
+            "Code": "LHR",
+            "Type": "Airport",
+            "Name": "London Heathrow"
+          },
+          "DestinationStation": {
+            "Id": 11235,
+            "ParentId": 2343,
+            "Code": "EDI",
+            "Type": "Airport",
+            "Name": "Edinburgh"
+          },
+          "Departure": "2019-09-28T17:10:00",
+          "Arrival": "2019-09-28T21:35:00",
+          "Duration": 265,
+          "JourneyMode": "Flight",
+          "Stops": [
+            {
+              "Id": 9451,
+              "ParentId": 509,
+              "Code": "AMS",
+              "Type": "Airport",
+              "Name": "Amsterdam"
+            }
+          ],
+          "Carriers": [
+            {
+              "Id": 1324,
+              "Code": "KL",
+              "Name": "KLM",
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/KL.png",
+              "DisplayCode": "KL"
+            }
+          ],
+          "OperatingCarriers": [
+            {
+              "Id": 1324,
+              "Code": "KL",
+              "Name": "KLM",
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/KL.png",
+              "DisplayCode": "KL"
+            }
+          ],
+          "Directionality": "Inbound",
+          "FlightNumbers": [
+            {
+              "FlightNumber": "1022",
+              "CarrierId": 1324,
+              "Carrier": {
+                "Id": 1324,
+                "Code": "KL",
+                "Name": "KLM",
+                "ImageUrl": "https://s1.apideeplink.com/images/airlines/KL.png",
+                "DisplayCode": "KL"
+              }
+            },
+            {
+              "FlightNumber": "1293",
+              "CarrierId": 1324,
+              "Carrier": {
+                "Id": 1324,
+                "Code": "KL",
+                "Name": "KLM",
+                "ImageUrl": "https://s1.apideeplink.com/images/airlines/KL.png",
+                "DisplayCode": "KL"
+              }
+            }
+          ]
+        },
+        "PricingOptions": [
+          {
+            "Agents": [
+              {
+                "Id": 3165195,
+                "Name": "lastminute.com",
+                "ImageUrl": "https://s1.apideeplink.com/images/websites/lmuk.png",
+                "Status": "UpdatesComplete",
+                "OptimisedForMobile": true,
+                "Type": "TravelAgent"
+              }
+            ],
+            "QuoteAgeInMinutes": 1,
+            "Price": 444.11,
+            "DeeplinkUrl": "http://partners.api.skyscanner.net/apiservices/deeplink/v2?_cje=zOm%2f6FCg6gDOE4rdoXmlE7hM3pD0U74mG5ftPhdP2gYHYNfl2GcrqQa0epbDDGLd&url=https%3a%2f%2fwww.skyscanner.net%2ftransport_deeplink%2f4.0%2fUK%2fen-GB%2fGBP%2flmuk%2f2%2f11235.13554.2019-09-21%2c13554.11235.2019-09-28%2fair%2ftrava%2fflights%3fitinerary%3dflight%7c-32753%7c3257%7c11235%7c2019-09-21T16%3a15%7c11154%7c2019-09-21T17%3a30%7c75%7cEKX26UKG%7cE%7c-%3bflight%7c-32480%7c5970%7c11154%7c2019-09-21T19%3a00%7c13554%7c2019-09-21T20%3a20%7c80%7cQEIRO%7cQ%7c-%2cflight%7c-32132%7c1022%7c13554%7c2019-09-28T17%3a10%7c9451%7c2019-09-28T19%3a35%7c85%7cASRGB%7cA%7c-%3bflight%7c-32132%7c1293%7c9451%7c2019-09-28T21%3a10%7c11235%7c2019-09-28T21%3a35%7c85%7cRSRGB%7cR%7c-%26carriers%3d-32753%2c-32480%2c-32132%26operators%3d-32754%3b-32753%2c-32132%3b-32132%26passengers%3d1%26channel%3ddataapi%26cabin_class%3deconomy%26facilitated%3dfalse%26ticket_price%3d444.11%26is_npt%3dfalse%26is_multipart%3dfalse%26client_id%3dskyscanner_b2b%26q_ids%3dlmuk.11235.13554.190921.190928.1..E%7c4252946926700036678%26q_sources%3dJACQUARD%26commercial_filters%3dfalse%26q_datetime_utc%3d2019-09-14T09%3a54%3a00%26pqid%3dfalse"
+          }
+        ],
+        "BookingDetailsLink": {
+          "Uri": "/apiservices/pricing/v1.0/6e5f755f-1af0-4d9b-a043-7c70603c6ae6/booking",
+          "Body": "OutboundLegId=11235-1909211615--32753,-32480-1-13554-1909212020&InboundLegId=13554-1909281710--32132-1-11235-1909282135",
+          "Method": "PUT"
+        },
+        "FormattedData": "lastminute.com: 444.11 GBP"
+      }
+    ],
+    "Legs": [
+      {
+        "Id": "11235-1909211735--32302-0-13554-1909211915",
+        "SegmentIds": [
+          0
+        ],
+        "OriginStation": {
+          "Id": 11235,
+          "ParentId": 2343,
+          "Code": "EDI",
+          "Type": "Airport",
+          "Name": "Edinburgh"
+        },
+        "DestinationStation": {
+          "Id": 13554,
+          "ParentId": 4698,
+          "Code": "LHR",
+          "Type": "Airport",
+          "Name": "London Heathrow"
+        },
+        "Departure": "2019-09-21T17:35:00",
+        "Arrival": "2019-09-21T19:15:00",
+        "Duration": 100,
+        "JourneyMode": "Flight",
+        "Stops": [],
+        "Carriers": [
+          {
+            "Id": 885,
+            "Code": "BE",
+            "Name": "Flybe",
+            "ImageUrl": "https://s1.apideeplink.com/images/airlines/BE.png",
+            "DisplayCode": "BE"
+          }
+        ],
+        "OperatingCarriers": [
+          {
+            "Id": 885,
+            "Code": "BE",
+            "Name": "Flybe",
+            "ImageUrl": "https://s1.apideeplink.com/images/airlines/BE.png",
+            "DisplayCode": "BE"
+          }
+        ],
+        "Directionality": "Outbound",
+        "FlightNumbers": [
+          {
+            "FlightNumber": "2111",
+            "CarrierId": 885,
+            "Carrier": {
+              "Id": 885,
+              "Code": "BE",
+              "Name": "Flybe",
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/BE.png",
+              "DisplayCode": "BE"
+            }
+          }
+        ]
+      },
+      {
+        "Id": "11235-1909211705--32677-1-13554-1909212120",
+        "SegmentIds": [
+          3,
+          4
+        ],
+        "OriginStation": {
+          "Id": 11235,
+          "ParentId": 2343,
+          "Code": "EDI",
+          "Type": "Airport",
+          "Name": "Edinburgh"
+        },
+        "DestinationStation": {
+          "Id": 13554,
+          "ParentId": 4698,
+          "Code": "LHR",
+          "Type": "Airport",
+          "Name": "London Heathrow"
+        },
+        "Departure": "2019-09-21T17:05:00",
+        "Arrival": "2019-09-21T21:20:00",
+        "Duration": 255,
+        "JourneyMode": "Flight",
+        "Stops": [
+          {
+            "Id": 10413,
+            "ParentId": 6073,
+            "Code": "CDG",
+            "Type": "Airport",
+            "Name": "Paris Charles de Gaulle"
+          }
+        ],
+        "Carriers": [
+          {
+            "Id": 838,
+            "Code": "AF",
+            "Name": "Air France",
+            "ImageUrl": "https://s1.apideeplink.com/images/airlines/AF.png",
+            "DisplayCode": "AF"
+          }
+        ],
+        "OperatingCarriers": [
+          {
+            "Id": 838,
+            "Code": "AF",
+            "Name": "Air France",
+            "ImageUrl": "https://s1.apideeplink.com/images/airlines/AF.png",
+            "DisplayCode": "AF"
+          }
+        ],
+        "Directionality": "Outbound",
+        "FlightNumbers": [
+          {
+            "FlightNumber": "1487",
+            "CarrierId": 838,
+            "Carrier": {
+              "Id": 838,
+              "Code": "AF",
+              "Name": "Air France",
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/AF.png",
+              "DisplayCode": "AF"
+            }
+          },
+          {
+            "FlightNumber": "1380",
+            "CarrierId": 838,
+            "Carrier": {
+              "Id": 838,
+              "Code": "AF",
+              "Name": "Air France",
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/AF.png",
+              "DisplayCode": "AF"
+            }
+          }
+        ]
+      },
+      {
+        "Id": "11235-1909210715--32480-0-13554-1909210850",
+        "SegmentIds": [
+          7
+        ],
+        "OriginStation": {
+          "Id": 11235,
+          "ParentId": 2343,
+          "Code": "EDI",
+          "Type": "Airport",
+          "Name": "Edinburgh"
+        },
+        "DestinationStation": {
+          "Id": 13554,
+          "ParentId": 4698,
+          "Code": "LHR",
+          "Type": "Airport",
+          "Name": "London Heathrow"
+        },
+        "Departure": "2019-09-21T07:15:00",
+        "Arrival": "2019-09-21T08:50:00",
+        "Duration": 95,
+        "JourneyMode": "Flight",
+        "Stops": [],
+        "Carriers": [
+          {
+            "Id": 881,
+            "Code": "BA",
+            "Name": "British Airways",
+            "ImageUrl": "https://s1.apideeplink.com/images/airlines/BA.png",
+            "DisplayCode": "BA"
+          }
+        ],
+        "OperatingCarriers": [
+          {
+            "Id": 881,
+            "Code": "BA",
+            "Name": "British Airways",
+            "ImageUrl": "https://s1.apideeplink.com/images/airlines/BA.png",
+            "DisplayCode": "BA"
+          }
+        ],
+        "Directionality": "Outbound",
+        "FlightNumbers": [
+          {
+            "FlightNumber": "1461",
+            "CarrierId": 881,
+            "Carrier": {
+              "Id": 881,
+              "Code": "BA",
+              "Name": "British Airways",
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/BA.png",
+              "DisplayCode": "BA"
+            }
+          }
+        ]
+      },
+      {
+        "Id": "11235-1909211615--32753,-32480-1-13554-1909212020",
+        "SegmentIds": [
+          11,
+          12
+        ],
+        "OriginStation": {
+          "Id": 11235,
+          "ParentId": 2343,
+          "Code": "EDI",
+          "Type": "Airport",
+          "Name": "Edinburgh"
+        },
+        "DestinationStation": {
+          "Id": 13554,
+          "ParentId": 4698,
+          "Code": "LHR",
+          "Type": "Airport",
+          "Name": "London Heathrow"
+        },
+        "Departure": "2019-09-21T16:15:00",
+        "Arrival": "2019-09-21T20:20:00",
+        "Duration": 245,
+        "JourneyMode": "Flight",
+        "Stops": [
+          {
+            "Id": 11154,
+            "ParentId": 2277,
+            "Code": "DUB",
+            "Type": "Airport",
+            "Name": "Dublin"
+          }
+        ],
+        "Carriers": [
+          {
+            "Id": 1033,
+            "Code": "EI",
+            "Name": "Aer Lingus",
+            "ImageUrl": "https://s1.apideeplink.com/images/airlines/EI.png",
+            "DisplayCode": "EI"
+          },
+          {
+            "Id": 881,
+            "Code": "BA",
+            "Name": "British Airways",
+            "ImageUrl": "https://s1.apideeplink.com/images/airlines/BA.png",
+            "DisplayCode": "BA"
+          }
+        ],
+        "OperatingCarriers": [
+          {
+            "Id": 1653,
+            "Code": "RE",
+            "Name": "Stobart Air",
+            "ImageUrl": "https://s1.apideeplink.com/images/airlines/RE.png",
+            "DisplayCode": "RE"
+          },
+          {
+            "Id": 1033,
+            "Code": "EI",
+            "Name": "Aer Lingus",
+            "ImageUrl": "https://s1.apideeplink.com/images/airlines/EI.png",
+            "DisplayCode": "EI"
+          }
+        ],
+        "Directionality": "Outbound",
+        "FlightNumbers": [
+          {
+            "FlightNumber": "3257",
+            "CarrierId": 1033,
+            "Carrier": {
+              "Id": 1033,
+              "Code": "EI",
+              "Name": "Aer Lingus",
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/EI.png",
+              "DisplayCode": "EI"
+            }
+          },
+          {
+            "FlightNumber": "5970",
+            "CarrierId": 881,
+            "Carrier": {
+              "Id": 881,
+              "Code": "BA",
+              "Name": "British Airways",
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/BA.png",
+              "DisplayCode": "BA"
+            }
+          }
+        ]
+      },
+      {
+        "Id": "11235-1909211930--32480-0-13554-1909212105",
+        "SegmentIds": [
+          13
+        ],
+        "OriginStation": {
+          "Id": 11235,
+          "ParentId": 2343,
+          "Code": "EDI",
+          "Type": "Airport",
+          "Name": "Edinburgh"
+        },
+        "DestinationStation": {
+          "Id": 13554,
+          "ParentId": 4698,
+          "Code": "LHR",
+          "Type": "Airport",
+          "Name": "London Heathrow"
+        },
+        "Departure": "2019-09-21T19:30:00",
+        "Arrival": "2019-09-21T21:05:00",
+        "Duration": 95,
+        "JourneyMode": "Flight",
+        "Stops": [],
+        "Carriers": [
+          {
+            "Id": 881,
+            "Code": "BA",
+            "Name": "British Airways",
+            "ImageUrl": "https://s1.apideeplink.com/images/airlines/BA.png",
+            "DisplayCode": "BA"
+          }
+        ],
+        "OperatingCarriers": [
+          {
+            "Id": 881,
+            "Code": "BA",
+            "Name": "British Airways",
+            "ImageUrl": "https://s1.apideeplink.com/images/airlines/BA.png",
+            "DisplayCode": "BA"
+          }
+        ],
+        "Directionality": "Outbound",
+        "FlightNumbers": [
+          {
+            "FlightNumber": "1451",
+            "CarrierId": 881,
+            "Carrier": {
+              "Id": 881,
+              "Code": "BA",
+              "Name": "British Airways",
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/BA.png",
+              "DisplayCode": "BA"
+            }
+          }
+        ]
+      }
+    ],
+    "Segments": [
+      {
+        "Id": 0,
+        "OriginStation": 11235,
+        "DestinationStation": 13554,
+        "DepartureDateTime": "2019-09-21T17:35:00",
+        "ArrivalDateTime": "2019-09-21T19:15:00",
+        "Carrier": 885,
+        "OperatingCarrier": 885,
+        "Duration": 100,
+        "FlightNumber": "2111",
+        "JourneyMode": "Flight",
+        "Directionality": "Outbound"
+      },
+      {
+        "Id": 1,
+        "OriginStation": 13554,
+        "DestinationStation": 10487,
+        "DepartureDateTime": "2019-09-28T09:40:00",
+        "ArrivalDateTime": "2019-09-28T12:15:00",
+        "Carrier": 1047,
+        "OperatingCarrier": 229,
+        "Duration": 95,
+        "FlightNumber": "461",
+        "JourneyMode": "Flight",
+        "Directionality": "Inbound"
+      },
+      {
+        "Id": 2,
+        "OriginStation": 10487,
+        "DestinationStation": 11235,
+        "DepartureDateTime": "2019-09-29T08:40:00",
+        "ArrivalDateTime": "2019-09-29T09:30:00",
+        "Carrier": 1047,
+        "OperatingCarrier": 229,
+        "Duration": 110,
+        "FlightNumber": "362",
+        "JourneyMode": "Flight",
+        "Directionality": "Inbound"
+      },
+      {
+        "Id": 3,
+        "OriginStation": 11235,
+        "DestinationStation": 10413,
+        "DepartureDateTime": "2019-09-21T17:05:00",
+        "ArrivalDateTime": "2019-09-21T20:00:00",
+        "Carrier": 838,
+        "OperatingCarrier": 838,
+        "Duration": 115,
+        "FlightNumber": "1487",
+        "JourneyMode": "Flight",
+        "Directionality": "Outbound"
+      },
+      {
+        "Id": 4,
+        "OriginStation": 10413,
+        "DestinationStation": 13554,
+        "DepartureDateTime": "2019-09-21T20:55:00",
+        "ArrivalDateTime": "2019-09-21T21:20:00",
+        "Carrier": 838,
+        "OperatingCarrier": 838,
+        "Duration": 85,
+        "FlightNumber": "1380",
+        "JourneyMode": "Flight",
+        "Directionality": "Outbound"
+      }
+    ],
+    "Carriers": [
+      {
+        "Id": 885,
+        "Code": "BE",
+        "Name": "Flybe",
+        "ImageUrl": "https://s1.apideeplink.com/images/airlines/BE.png",
+        "DisplayCode": "BE"
+      },
+      {
+        "Id": 229,
+        "Code": "4U",
+        "Name": "germanwings",
+        "ImageUrl": "https://s1.apideeplink.com/images/airlines/4U.png",
+        "DisplayCode": "4U"
+      },
+      {
+        "Id": 1047,
+        "Code": "EW",
+        "Name": "eurowings",
+        "ImageUrl": "https://s1.apideeplink.com/images/airlines/EW.png",
+        "DisplayCode": "EW"
+      },
+      {
+        "Id": 838,
+        "Code": "AF",
+        "Name": "Air France",
+        "ImageUrl": "https://s1.apideeplink.com/images/airlines/AF.png",
+        "DisplayCode": "AF"
+      },
+      {
+        "Id": 1033,
+        "Code": "EI",
+        "Name": "Aer Lingus",
+        "ImageUrl": "https://s1.apideeplink.com/images/airlines/EI.png",
+        "DisplayCode": "EI"
+      }
+    ],
+    "Agents": [
+      {
+        "Id": 1887169,
+        "Name": "telme",
+        "ImageUrl": "https://s1.apideeplink.com/images/websites/a341.png",
+        "Status": "UpdatesComplete",
+        "OptimisedForMobile": false,
+        "Type": "TravelAgent"
+      },
+      {
+        "Id": 2363321,
+        "Name": "easyJet",
+        "ImageUrl": "https://s1.apideeplink.com/images/websites/easy.png",
+        "Status": "UpdatesComplete",
+        "OptimisedForMobile": true,
+        "Type": "Airline"
+      },
+      {
+        "Id": 1963108,
+        "Name": "Mytrip",
+        "ImageUrl": "https://s1.apideeplink.com/images/websites/at24.png",
+        "Status": "UpdatesComplete",
+        "OptimisedForMobile": true,
+        "Type": "TravelAgent"
+      },
+      {
+        "Id": 2925540,
+        "Name": "Jet2",
+        "ImageUrl": "https://s1.apideeplink.com/images/websites/jett.png",
+        "Status": "UpdatesComplete",
+        "OptimisedForMobile": true,
+        "Type": "Airline"
+      },
+      {
+        "Id": 2032127,
+        "Name": "British Airways",
+        "ImageUrl": "https://s1.apideeplink.com/images/websites/ba__.png",
+        "Status": "UpdatesComplete",
+        "OptimisedForMobile": true,
+        "Type": "Airline"
+      }
+    ],
+    "Places": [
+      {
+        "Id": 18563,
+        "ParentId": 9168,
+        "Code": "ZRH",
+        "Type": "Airport",
+        "Name": "Zurich"
+      },
+      {
+        "Id": 199,
+        "Code": "AT",
+        "Type": "Country",
+        "Name": "Austria"
+      },
+      {
+        "Id": 14855,
+        "ParentId": 5684,
+        "Code": "NWI",
+        "Type": "Airport",
+        "Name": "Norwich"
+      },
+      {
+        "Id": 5772,
+        "ParentId": 115,
+        "Code": "NYC",
+        "Type": "City",
+        "Name": "New York"
+      },
+      {
+        "Id": 9168,
+        "ParentId": 242,
+        "Code": "ZRH",
+        "Type": "City",
+        "Name": "Zurich"
+      }
+    ],
+    "Currencies": [
+      {
+        "Code": "GBP",
+        "Symbol": "£",
+        "ThousandsSeparator": ",",
+        "DecimalSeparator": ".",
+        "SymbolOnLeft": true,
+        "SpaceBetweenAmountAndSymbol": false,
+        "RoundingCoefficient": 0,
+        "DecimalDigits": 2
+      }
+    ],
+    "ServiceQuery": {
+      "DateTime": "2019-09-14T09:54:30.9462429Z"
+    }
+  },
+  "Query": {
+    "Country": "GB",
+    "Currency": "GBP",
+    "Locale": "en-GB",
+    "Adults": 1,
+    "Children": 0,
+    "Infants": 0,
+    "OriginPlace": "2343",
+    "DestinationPlace": "13554",
+    "OutboundDate": "2019-09-21",
+    "InboundDate": "2019-09-28",
+    "LocationSchema": "Default",
+    "CabinClass": "economy",
+    "GroupPricing": false
+  }
+}

@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "scripts": {
     "start": "node ./src/server.js",
+    "start:debug": "node --inspect ./src/server.js",
+    "start:watch": "nodemon ./src/server.js",
     "test": "echo 'There are no server tests yet...'",
     "lint:fix": "npm run lint -- --fix",
     "lint": "eslint . --ignore-path ./../.gitignore"
@@ -15,7 +17,8 @@
     "eslint-config-skyscanner": "^3.0.0",
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.7.0"
+    "eslint-plugin-react": "^7.7.0",
+    "nodemon": "^1.19.2"
   },
   "dependencies": {
     "express": "^4.16.3",
