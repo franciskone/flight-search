@@ -1,0 +1,27 @@
+@import '~bpk-mixins';
+
+.ItineraryItem {
+  margin-bottom: $bpk-spacing-base;
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+    }
+    &__price {
+      line-height: $bpk-text-base-line-height;
+    }
+    &__agent {
+      color: $bpk-color-gray-300;
+    }
+
+    &__button {
+      padding-right: $bpk-spacing-lg;
+      padding-left: $bpk-spacing-lg;
+    }
+  }
+}

@@ -11,7 +11,7 @@ import STYLE from './SearchResultsActions.scss';
 const c = styleGetter(STYLE);
 
 const actionItemOnKeyPress = action => evt =>
-  evt.charCode === 13 && acstion(); // TODO Franciskone: add test
+  evt.charCode === 13 && action(); // TODO Franciskone: add test
 
 const ActionItem = ({
   action, children, isLast = false,
