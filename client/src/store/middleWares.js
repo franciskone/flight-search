@@ -2,6 +2,7 @@ import { applyMiddleware } from 'redux';
 import { createLogicMiddleware } from 'redux-logic';
 import { flightSearchLogic } from '../features/flightSearch';
 import { appInitLogic } from '../features/appInit';
+import { flightSearch } from '../api';
 
 const logicList = [
   ...appInitLogic,
@@ -10,7 +11,7 @@ const logicList = [
 
 const deps = {
   API: {
-    search: () => console.log('fetch serach API'),
+    flightSearch,
   },
 };
 

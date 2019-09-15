@@ -1,3 +1,5 @@
+import { actionCreator } from '../../util';
+
 const prefix = 'flightSearch';
 
 export const flightSearchActionType = {
@@ -6,8 +8,11 @@ export const flightSearchActionType = {
   SEARCH_ERROR: `${prefix}/SEARCH_ERROR`,
 };
 
+// TODO Franciskone: add tests
 const flightSearchAction = {
   search,
+  searchSuccess,
+  searchError,
 };
 export default flightSearchAction;
 
@@ -18,14 +23,22 @@ function search({
   inboundDate,
   adults,
 }) {
-  return {
-    type: flightSearchActionType.SEARCH,
-    payload: {
+  return actionCreator(
+    flightSearchActionType.SEARCH,
+    {
       originPlace,
       destinationPlace,
       outboundDate,
       inboundDate,
       adults,
     },
-  };
+  );
+}
+
+function searchSuccess(res) {
+  return actionCreator(flightSearchActionType.SEARCH_SUCCESS, res);
+}
+
+function searchError(err) {
+  return actionCreator(flightSearchActionType.SEARCH_ERROR, err);
 }

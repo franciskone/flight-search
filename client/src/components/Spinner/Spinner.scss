@@ -1,0 +1,8 @@
+@import '~bpk-mixins';
+
+.Spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $bpk-spacing-xxl;
+}

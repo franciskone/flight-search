@@ -5,6 +5,12 @@ function reduceById(list) {
   return listById;
 }
 
+const mapItineraries = itineraries => itineraries.map(
+  ({ OutboundLegId, InboundLegId, PricingOptions }) => ({
+    OutboundLegId, InboundLegId, PricingOptions,
+  }),
+);
+
 const filterSearchResultsData = (rawData) => {
   const legsById = reduceById(rawData.Legs);
   const segmentsById = reduceById(rawData.Segments);
@@ -14,8 +20,11 @@ const filterSearchResultsData = (rawData) => {
   const currenciesById = reduceById(rawData.Currencies);
   
   return {
-    query: rawData.Query,
-    itineraries: rawData.itineraries,
+    query: {
+      ...rawData.Query,
+      SessionKey: rawData.SessionKey,
+    },
+    itineraries: mapItineraries(rawData.Itineraries),
     legsById,
     segmentsById,
     carriersById,

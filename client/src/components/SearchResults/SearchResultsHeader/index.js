@@ -1,3 +1,3 @@
-import SearchResultsHeader from './SearchResultsHeader';
+import SearchResultsHeaderContainer from './SearchResultsHeaderContainer';
 
-export default SearchResultsHeader;
+export default SearchResultsHeaderContainer;

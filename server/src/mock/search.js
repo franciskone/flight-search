@@ -5,12 +5,14 @@
 const fs = require('fs');
 const path = require('path');
 
+const FAKE_DELAY = 100;
+
 const search = () => {
   console.log('search: FAKE RESPONSE');
   const data = fs.readFileSync(path.resolve(__dirname, './searchResponse.json'));
 
   return new Promise((resolve) => {
-    setTimeout(() => resolve(JSON.parse(data)), 2000);
+    setTimeout(() => resolve(JSON.parse(data)), FAKE_DELAY);
   });
 };
 

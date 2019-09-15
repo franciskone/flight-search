@@ -3,8 +3,7 @@ import React from 'react';
 import burgerMenuIcon from './burgerMenuIcon.svg';
 import logo from './logo.svg';
 import STYLES from './Header.scss';
-import styleGetter from '../../util/style';
-import { fakeOnClick } from '../../util';
+import { fakeOnClick, styleGetter } from '../../util';
 
 const c = styleGetter(STYLES);
 
