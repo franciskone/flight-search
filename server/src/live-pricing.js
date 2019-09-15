@@ -6,7 +6,7 @@ const querystring = require('querystring');
 
 const config = require('./config');
 
-const mockSearch = require('./mock/search'); // TODO Franciskone: DELETEs
+const mockSearch = require('./mock/search'); // TODO Franciskone: DELETE
 
 const PRICING_URL = `${config.skyscannerApi}apiservices/pricing/v1.0`;
 const POLL_DELAY = 1000;
@@ -39,7 +39,7 @@ const createSession = async (params) => {
       const json = await response.json();
       throw new Error(JSON.stringify(json));
     }
-    console.log('Session created.');  
+    console.log('Session created.');
     // Location header contains URL to poll for results.
     return response.headers.get('location');
   } catch (err) {

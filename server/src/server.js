@@ -18,9 +18,6 @@ app.get('/', (req, res) => {
 
 /**
   Simple flight search api wrapper.
-
-  TODO: client should provide params.
-
   API params and location values are here:
   http://business.skyscanner.net/portal/en-GB/Documentation/FlightsLivePricingQuickStart
 */
@@ -44,6 +41,7 @@ app.get('/api/search', async (req, res) => {
 
     const results = await livePricing.search(reqParamsForSession);
     // TODO - a better format for displaying results to the client
+    // TODO Franciskone: DELETE console.log
     console.log('TODO: transform results for consumption by client');
     res.json(results);
   } catch (err) {

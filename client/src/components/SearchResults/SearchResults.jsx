@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { BpkExtraLargeSpinner, SPINNER_TYPES } from 'bpk-component-spinner';
+import BpkText from 'bpk-component-text';
 
 import STYLE from './SearchResults.scss';
 import { styleGetter } from '../../util';
@@ -107,6 +109,10 @@ const SearchResults = ({ itineraries }) => ( // TODO Franciskone: add tests
     />
     <SearchResultsActions />
     <div className={c('SearchResults__itineraries')}>
+      {/* TODO Franciskone: add loading spinner */}
+      <BpkExtraLargeSpinner type={SPINNER_TYPES.primary} />
+      <BpkText textStyle="xl">Searching</BpkText>
+      
       {
         itineraries.map(({
           flights, price, id, agent,
