@@ -1,11 +1,15 @@
 import { connect } from 'react-redux';
 import SearchResults from './SearchResults';
-import { flightSearchHasQuerySelector, flightSearchIsLoadingSelector } from '../../features/flightSearch';
+import {
+  flightSearchHasQuerySelector,
+  flightSearchIsLoadingSelector,
+  flightSearchItinerariesForResultsSelector,
+} from '../../features/flightSearch';
 
 const fakeItineraries = [
   {
     id: '11235-1909211735--32302-0-13554-1909211915',
-    flights: [
+    legs: [
       {
         carrier: 'Alitalia',
         origin: {
@@ -93,7 +97,7 @@ const fakeItineraries = [
 
 const mapStateToProps = state => ({
   isLoading: flightSearchIsLoadingSelector(state),
-  itineraries: [],
+  itineraries: flightSearchItinerariesForResultsSelector(state),
   hasQuery: flightSearchHasQuerySelector(state),
 });
 

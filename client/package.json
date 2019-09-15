@@ -18,6 +18,7 @@
     "bpk-component-button": "^2.5.12",
     "bpk-component-card": "^1.1.109",
     "bpk-component-icon": "^4.1.4",
+    "bpk-component-infinite-scroll": "^2.2.62",
     "bpk-component-spinner": "^2.2.126",
     "bpk-component-text": "^1.1.26",
     "bpk-mixins": "^17.24.8",

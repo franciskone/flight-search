@@ -7,6 +7,7 @@ import SearchResultsHeader from './SearchResultsHeader';
 import SearchResultsActions from './SearchResultsActions';
 import ItineraryItem, { ItineraryType } from './ItineraryItem';
 import Spinner from '../Spinner';
+import SearchResultsList from "./SearchResultsList/SearchResultsList"
 
 const c = styleGetter(STYLE);
 const SearchResults = ({ itineraries, isLoading, hasQuery }) => ( // TODO Franciskone: add tests
@@ -19,15 +20,17 @@ const SearchResults = ({ itineraries, isLoading, hasQuery }) => ( // TODO Franci
           <SearchResultsActions />
   
           <div className={c('SearchResults__itineraries')}>
+            {/* TODO Franciskone: add infinite scrolling */}
+            <SearchResultsList />
             {
               itineraries.map(({
-                flights, price, id, agent,
+                legs, price, id, agent,
               }) => (
                 <ItineraryItem
                   key={id}
                   id={id}
                   agent={agent}
-                  flights={flights}
+                  legs={legs}
                   price={price}
                 />
               ))

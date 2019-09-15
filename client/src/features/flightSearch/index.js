@@ -8,3 +8,4 @@ export { flightSearchQueryDestinationCodeSelector } from './flightSearchSelector
 export { flightSearchQueryPassengersNumberSelector } from './flightSearchSelectors';
 export { flightSearchQueryPassengersCabinClassSelector } from './flightSearchSelectors';
 export { flightSearchHasQuerySelector } from './flightSearchSelectors';
+export { flightSearchItinerariesForResultsSelector } from './flightSearchSelectors';

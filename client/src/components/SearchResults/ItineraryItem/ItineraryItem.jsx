@@ -10,7 +10,7 @@ import STYLE from './ItineraryItem.scss';
 
 const c = styleGetter(STYLE);
 
-const getTimeFromDate = date => {
+const getTimeFromDate = (date) => {
   const dateObj = new Date(date);
   const hours = (`0${dateObj.getHours()}`).slice(-2);
   const minutes = (`0${dateObj.getMinutes()}`).slice(-2);
@@ -40,7 +40,7 @@ AirportInfo.defaultProps = {
 
 
 const FlightSummary = ({
-  carrier, origin, destination, duration, stops,
+  id, carrier, origin, destination, duration, stops,
 }) => {
   let stopsInfo = 'Direct';
   if (stops > 0) {
@@ -57,7 +57,7 @@ const FlightSummary = ({
         
         <img
           className={c('carrier-logo')}
-          src="https://logos.skyscnr.com/images/airlines/favicon/EK.png"
+          src={`https://logos.skyscnr.com/images/airlines/favicon/${carrier}.png` /* TODO Franciskone move url concat in util */}
           alt="carrier logo"
           aria-hidden
         />
@@ -84,30 +84,33 @@ const FlightSummary = ({
   );
 };
 
-const FlightType = {
+const LegType = {
+  id: PropTypes.string.isRequired,
   carrier: PropTypes.string.isRequired,
-  origin: PropTypes.shape(AirportInfoType).isRequired,
-  destination: PropTypes.shape(AirportInfoType).isRequired,
   duration: PropTypes.number.isRequired,
   stops: PropTypes.number.isRequired,
+  origin: PropTypes.shape(AirportInfoType).isRequired,
+  destination: PropTypes.shape(AirportInfoType).isRequired,
 };
-FlightSummary.propTypes = FlightType;
+FlightSummary.propTypes = LegType;
 
 const onClickHandler = () => fakeOnClick('Select');
 const ItineraryItem = ({
-  flights, price, agent, id,
+  legs, price, agent, id,
 }) => ( // TODO Franciskone: add tests
   <BpkCard className={c('ItineraryItem')}>
     {
-      flights.map(({
+      legs.map(({
         carrier,
         origin,
         destination,
         duration,
         stops,
-      }, key) => (
+        id: legId,
+      }) => (
         <FlightSummary
-          key={key /* TOO franciskone: ise the actual flight key  */}
+          key={legId}
+          id={legId}
           carrier={carrier}
           origin={origin}
           destination={destination}
@@ -134,7 +137,7 @@ const ItineraryItem = ({
 
 export const ItineraryType = {
   id: PropTypes.string.isRequired,
-  flights: PropTypes.arrayOf(PropTypes.shape(FlightType)).isRequired,
+  legs: PropTypes.arrayOf(PropTypes.shape(LegType)).isRequired,
   price: PropTypes.number.isRequired,
   agent: PropTypes.string.isRequired,
 };
