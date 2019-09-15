@@ -90,19 +90,6 @@ const fakeItineraries = [
         duration: 90,
         stops: 0,
       },
-      {
-        carrier: 'Alitalia',
-        origin: {
-          date: '2019-09-28T09:40:00',
-          airport: 'EDI',
-        },
-        destination: {
-          date: '2019-09-29T09:30:00',
-          airport: 'LHR',
-        },
-        duration: 50,
-        stops: 1,
-      },
     ],
     price: 256,
     agent: 'omegaflightstore.com',

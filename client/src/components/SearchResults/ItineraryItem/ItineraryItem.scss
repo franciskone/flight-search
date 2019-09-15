@@ -2,7 +2,13 @@
 
 .ItineraryItem {
   margin-bottom: $bpk-spacing-base;
-  //box-shadow: $bpk-box-shadow-sm;
+
+  .flight {
+    display: flex;
+    justify-content: space-between;
+    &__routes {}
+    &__details {}
+  }
 
   .footer {
     display: flex;
