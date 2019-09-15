@@ -3,6 +3,7 @@
 
 const fetch = require('node-fetch');
 const querystring = require('querystring');
+const { filterSearchResultsData } = require('./util');
 
 const config = require('./config');
 
@@ -31,7 +32,7 @@ const createSession = async (params) => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
-        'Accept': 'application/json',
+        Accept: 'application/json',
       },
       body: formatParams(params),
     });
@@ -83,12 +84,16 @@ const getResults = async (location) => {
 const USE_FAKE_DATA = true;
 const search = async (params) => {
   try {
-    if(USE_FAKE_DATA) { // TODO Franciskone: DELETE code in the If statement and use only the ELSE code
-      return await mockSearch.search();
-    } else {
-      const locationToPoll = await createSession(params);
-      return await getResults(locationToPoll);
+    // TODO Franciskone: DELETE code in the If statement and use only the ELSE code
+    if (USE_FAKE_DATA) {
+      const rawData = await mockSearch.search();
+      return filterSearchResultsData(rawData);
     }
+    
+    const locationToPoll = await createSession(params);
+    const rawData = await getResults(locationToPoll);
+    
+    return filterSearchResultsData(rawData);
   } catch (err) {
     throw err;
   }

@@ -5,6 +5,7 @@
     "jest": true
   },
   "rules": {
-    "no-trailing-spaces": "off"
+    "no-trailing-spaces": "off",
+    "no-use-before-define": "off"
   }
 }
