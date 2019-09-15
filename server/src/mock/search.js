@@ -10,7 +10,7 @@ const search = () => {
   const data = fs.readFileSync(path.resolve(__dirname, './searchResponse.json'));
 
   return new Promise((resolve) => {
-    resolve(JSON.parse(data));
+    setTimeout(() => resolve(JSON.parse(data)), 2000);
   });
 };
 
