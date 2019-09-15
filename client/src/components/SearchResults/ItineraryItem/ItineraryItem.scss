@@ -1,13 +1,68 @@
 @import '~bpk-mixins';
 
 .ItineraryItem {
-  margin-bottom: $bpk-spacing-base;
+  margin-bottom: $bpk-spacing-md;
+  padding: $bpk-spacing-md;
 
   .flight {
     display: flex;
     justify-content: space-between;
-    &__routes {}
-    &__details {}
+    margin-bottom: $bpk-spacing-md;
+
+    .route {
+      display: flex;
+      align-items: center;
+
+      .carrier-logo {
+        width: $bpk-spacing-xl;
+        margin-right: $bpk-spacing-md;
+      }
+
+      .airport {
+        display: flex;
+        flex-direction: column;
+        width: $bpk-font-size-base * 5;
+
+        &--destination {
+
+          align-items: flex-end;
+        }
+
+        &__time {
+          justify-self: flex-start;
+        }
+
+        &__name {
+          color: $bpk-color-gray-400;
+        }
+      }
+
+      .arrow {
+        align-self: center;
+        fill: $bpk-color-gray-300;
+      }
+    }
+
+    .details {
+      text-align: end;
+
+      &__duration {
+        display: block;
+        color: $bpk-color-gray-400;
+      }
+
+      &__stops {
+        display: block;
+
+        &--single {
+          color: $bpk-color-green-500;
+        }
+
+        &--multiple {
+          color: $bpk-color-red-500;
+        }
+      }
+    }
   }
 
   .footer {
