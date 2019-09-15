@@ -3,7 +3,6 @@
 
 const fetch = require('node-fetch');
 const querystring = require('querystring');
-const { filterSearchResultsData } = require('./util');
 
 const config = require('./config');
 
@@ -86,14 +85,11 @@ const search = async (params) => {
   try {
     // TODO Franciskone: DELETE code in the If statement and use only the ELSE code
     if (USE_FAKE_DATA) {
-      const rawData = await mockSearch.search();
-      return filterSearchResultsData(rawData);
+      return await mockSearch.search();
     }
     
     const locationToPoll = await createSession(params);
-    const rawData = await getResults(locationToPoll);
-    
-    return filterSearchResultsData(rawData);
+    return await getResults(locationToPoll);
   } catch (err) {
     throw err;
   }

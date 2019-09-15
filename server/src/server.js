@@ -5,6 +5,7 @@ const express = require('express');
 
 const app = express();
 const livePricing = require('./live-pricing');
+const { filterSearchResultsData } = require('./util');
 
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
@@ -39,11 +40,8 @@ app.get('/api/search', async (req, res) => {
       adults,
     };
 
-    const results = await livePricing.search(reqParamsForSession);
-    // TODO - a better format for displaying results to the client
-    // TODO Franciskone: DELETE console.log
-    console.log('TODO: transform results for consumption by client');
-    res.json(results);
+    const rawResults = await livePricing.search(reqParamsForSession);
+    res.json(filterSearchResultsData(rawResults));
   } catch (err) {
     res.status(500).send(err);
     console.error(err);

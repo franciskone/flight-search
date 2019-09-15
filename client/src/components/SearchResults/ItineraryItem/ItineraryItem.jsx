@@ -122,7 +122,7 @@ const ItineraryItem = ({
     
     <div className={c('footer')}>
       <div className={c('footer__info')}>
-        <BpkText textStyle="xl" className={c('footer__price')}>{price} £</BpkText>
+        <BpkText textStyle="xl" className={c('footer__price')}>{Math.round(price)} £</BpkText>
         <BpkText textStyle="base" className={c('footer__agent')}>{agent}</BpkText>
       </div>
       <BpkButton

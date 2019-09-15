@@ -8,7 +8,7 @@ export const flightSearchIsLoadingSelector = state => flightSearchState(state).i
 export const flightSearchQuerySelector = state => flightSearchState(state).query;
 const flightSearchPlaceSelector = (state, placeId) => flightSearchState(state).placesById[placeId];
 
-// TODO Franciskone: convert to reselectors
+// TODO Franciskone: convert to reselectors if repetitive expensive calculation
 
 // Queries
 export const flightSearchQueryOriginCodeSelector = (state) => {
@@ -48,18 +48,20 @@ export const flightSearchAgentsSelector = state => flightSearchState(state).agen
 
 // Carriers
 const flightSearchCarriersSelector = state => flightSearchState(state).carriersById;
-const flightSearchCarrierByIdSelector = (state, carrierId) => flightSearchCarriersSelector(state)[carrierId];
+const flightSearchCarrierByIdSelector = (state, carrierId) =>
+  flightSearchCarriersSelector(state)[carrierId];
 
 // Places
 const flightSearchPlacesSelector = state => flightSearchState(state).placesById;
-const flightSearchPlaceByIdSelector = (state, placeId) => flightSearchPlacesSelector(state)[placeId];
+const flightSearchPlaceByIdSelector = (state, placeId) =>
+  flightSearchPlacesSelector(state)[placeId];
 
 // Legs
 const flightSearchLegsSelector = state => flightSearchState(state).legsById;
 const flightSearchLegByIdSelector = (state, legId) => flightSearchLegsSelector(state)[legId];
 const flightSearchLegByIdForResultsSelector = (state, legId) => {
   const {
-    Id, SegmentIds, Carriers, Departure, Arrival, OriginStation, DestinationStation, Duration
+    Id, SegmentIds, Carriers, Departure, Arrival, OriginStation, DestinationStation, Duration,
   } = flightSearchLegByIdSelector(state, legId);
   
   const carrier = flightSearchCarrierByIdSelector(state, Carriers[0]);
@@ -70,7 +72,7 @@ const flightSearchLegByIdForResultsSelector = (state, legId) => {
     id: Id,
     carrier: carrier ? carrier.Code : null,
     duration: Duration,
-    stops: SegmentIds.length,
+    stops: SegmentIds.length - 1,
     origin: {
       date: Departure,
       airport: origin ? origin.Code : FALLBACK_VALUE,

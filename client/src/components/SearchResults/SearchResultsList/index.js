@@ -1,4 +1,4 @@
-import SearchResultsList from './SearchResultsList';
+import SearchResultsListContainer from './SearchResultsListContainer';
 
-export default SearchResultsList;
+export default SearchResultsListContainer;
 

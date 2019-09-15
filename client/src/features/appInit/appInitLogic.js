@@ -9,7 +9,7 @@ const initLogic = createLogic({
     const searchParams = {
       originPlace: 'EDI-sky',
       destinationPlace: 'LOND-sky',
-      outboundDate: '2019-09-21',
+      outboundDate: '2019-09-21', // TODO Franciskone: create Util to get 'next monday' and day later
       inboundDate: '2019-09-28',
       adults: 1,
     };
