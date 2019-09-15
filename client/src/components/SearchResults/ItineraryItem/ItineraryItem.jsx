@@ -77,8 +77,8 @@ const FlightSummary = ({
       </div>
       
       <div className={c('details')}>
-        <BpkText textStyle="md" className={c('details__duration')}>{duration}</BpkText> {/* TODO Franciskone: add formatting for timing */}
-        <BpkText textStyle="md" className={c('details__stops', stopsClassName)}>{stopsInfo}</BpkText>
+        <BpkText className={c('details__duration')}>{duration}</BpkText> {/* TODO Franciskone: add formatting for timing */}
+        <BpkText className={c('details__stops', stopsClassName)}>{stopsInfo}</BpkText>
       </div>
     </div>
   );
