@@ -15,7 +15,7 @@ const initLogic = createLogic({
       inboundDate: moment().day(9).format('YYYY-MM-DD'),
       adults: 1,
     };
-    console.log(searchParams);
+
     dispatch(flightSearchActions.search(searchParams));
     
     done();
