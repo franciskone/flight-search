@@ -43,7 +43,6 @@ const AlignedPriceAlert = withAlignment(
   BpkLargePriceAlertIcon, lineHeightLg, iconSizeLg,
 );
 
-// TODO Franciskone: add redux actions to sort, filter and add price alert
 const SearchResultsActions = () => ( // TODO Franciskone: add snapshot test
   <div className={c('SearchResultsActions')}>
     <ActionItem action={() => fakeOnClick('Filter')}>

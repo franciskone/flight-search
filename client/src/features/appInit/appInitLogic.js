@@ -1,4 +1,6 @@
 import { createLogic } from 'redux-logic';
+import moment from 'moment';
+
 import { appInitActionType } from './appInitActions';
 import { flightSearchActions } from '../flightSearch';
 
@@ -9,11 +11,11 @@ const initLogic = createLogic({
     const searchParams = {
       originPlace: 'EDI-sky',
       destinationPlace: 'LOND-sky',
-      outboundDate: '2019-09-21', // TODO Franciskone: create Util to get 'next monday' and day later
-      inboundDate: '2019-09-28',
+      outboundDate: moment().day(8).format('YYYY-MM-DD'),
+      inboundDate: moment().day(9).format('YYYY-MM-DD'),
       adults: 1,
     };
-    
+    console.log(searchParams);
     dispatch(flightSearchActions.search(searchParams));
     
     done();

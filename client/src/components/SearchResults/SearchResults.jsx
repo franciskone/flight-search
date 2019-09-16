@@ -6,7 +6,7 @@ import SearchResultsActions from './SearchResultsActions';
 import Spinner from '../Spinner';
 import SearchResultsList from './SearchResultsList';
 
-const SearchResults = ({isLoading, hasQuery }) => ( // TODO Franciskone: add tests
+const SearchResults = ({ isLoading, hasQuery }) => ( // TODO Franciskone: add tests
   <div>
     { isLoading
       ? <Spinner label="Searching" />
