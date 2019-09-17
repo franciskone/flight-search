@@ -18,7 +18,7 @@ const SearchResults = ({
     ? 'Try again'
     : 'Reload the page';
   
-  return ( // TODO Franciskone: add tests
+  return (
     <div>
       { isLoading
         ? <Spinner label="Searching" />
