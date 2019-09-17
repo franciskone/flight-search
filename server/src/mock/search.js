@@ -8,7 +8,7 @@ const path = require('path');
 const FAKE_DELAY = 100;
 
 const search = () => {
-  console.log('search: FAKE RESPONSE');
+  console.log('\napi/search: MOCK RESPONSE');
   const data = fs.readFileSync(path.resolve(__dirname, './searchResponse.json'));
 
   return new Promise((resolve) => {

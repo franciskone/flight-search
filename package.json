@@ -5,12 +5,18 @@
   "description": "Skyscanner full-stack recruitment test.",
   "scripts": {
     "install": "(cd ./client && npm install) && (cd ./server && npm install)",
+
     "client": "(cd ./client && npm start)",
     "build": "(cd ./client && npm run build)",
+
     "server": "(cd ./server && npm start)",
-    "server:watch": "(cd ./server && npm start:watch)",
+    "server:watch": "(cd ./server && npm run start:watch)",
+    "server:mock": "(cd ./server && npm run start:mock)",
+    "server:mock:watch": "(cd ./server && npm run start:mock:watch)",
+
     "pretest": "(cd ./client && npm run lint) && (cd ./server && npm run lint)",
     "test": "(cd ./client && CI=true npm test) && (cd ./server && CI=true npm test)",
-    "start": "echo 'Did you mean `npm run server` or `npm run client`?'"
+
+    "start": "echo 'Did you mean: \n - npm run client \n - npm run server (prepend APIKEY=<apiKeyValue>) 🙂 \n - npm run server:watch (prepend APIKEY= <apiKeyValue>) 🙂 \n - npm run server:mock \n - npm run server:mock:watch?'"
   }
 }

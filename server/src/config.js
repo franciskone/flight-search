@@ -10,6 +10,8 @@ if (!APIKEY) {
   process.exit(1);
 }
 
+if (APIKEY === 'MOCK') console.log('running the server in MOCK mode');
+
 module.exports = {
   apiKey: APIKEY,
   skyscannerApi: 'http://partners.api.skyscanner.net/',
