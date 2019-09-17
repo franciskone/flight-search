@@ -5,9 +5,7 @@ exports[`App should render correctly 1`] = `
   className="App"
 >
   <Header />
-  <main
-    className="App__main"
-  >
+  <main>
     <Unknown />
   </main>
 </div>

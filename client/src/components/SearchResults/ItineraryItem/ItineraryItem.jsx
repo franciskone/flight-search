@@ -32,7 +32,7 @@ AirportInfo.defaultProps = {
 };
 
 
-const FlightSummary = ({
+const LegSummary = ({
   carrier, origin, destination, duration, stops,
 }) => {
   let stopsInfo = 'Direct';
@@ -83,12 +83,12 @@ const LegType = {
   origin: PropTypes.shape(AirportInfoType).isRequired,
   destination: PropTypes.shape(AirportInfoType).isRequired,
 };
-FlightSummary.propTypes = LegType;
+LegSummary.propTypes = LegType;
 
 const onClickHandler = () => fakeOnClick('Select');
 const ItineraryItem = ({
   legs, price, agent,
-}) => ( // TODO Franciskone: add tests
+}) => (
   <BpkCard className={c('ItineraryItem')}>
     {
       legs.map(({
@@ -99,7 +99,7 @@ const ItineraryItem = ({
         stops,
         id: legId,
       }) => (
-        <FlightSummary
+        <LegSummary
           key={legId}
           id={legId}
           carrier={carrier}
@@ -123,7 +123,8 @@ const ItineraryItem = ({
         Select
       </BpkButton>
     </div>
-  </BpkCard>);
+  </BpkCard>
+);
 
 
 export const ItineraryType = {
