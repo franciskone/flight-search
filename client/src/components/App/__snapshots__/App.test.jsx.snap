@@ -8,7 +8,7 @@ exports[`App should render correctly 1`] = `
   <main
     className="App__main"
   >
-    <SearchResults />
+    <Unknown />
   </main>
 </div>
 `;

@@ -5,18 +5,11 @@ import BpkText from 'bpk-component-text';
 import BpkButton from 'bpk-component-button';
 import BpkLongArrowRight from 'bpk-component-icon/lg/long-arrow-right';
 
-import { fakeOnClick, styleGetter } from '../../../util';
+import {fakeOnClick, getTimeFromDate, minutesToTimeFormat, styleGetter} from '../../../util'
 import STYLE from './ItineraryItem.scss';
 
 const c = styleGetter(STYLE);
 
-const getTimeFromDate = (date) => {
-  const dateObj = new Date(date);
-  const hours = (`0${dateObj.getHours()}`).slice(-2);
-  const minutes = (`0${dateObj.getMinutes()}`).slice(-2);
-  
-  return `${hours}:${minutes}`;
-}; // TODO Franciskone: add test
 
 const AirportInfo = ({ date, airport, isDestination }) => (
   <div className={c('airport', { 'airport--destination': isDestination })}>
@@ -76,7 +69,7 @@ const FlightSummary = ({
       </div>
       
       <div className={c('details')}>
-        <BpkText className={c('details__duration')}>{duration}</BpkText> {/* TODO Franciskone: add formatting for timing */}
+        <BpkText className={c('details__duration')}>{minutesToTimeFormat(duration)}</BpkText> {/* TODO Franciskone: add formatting for timing */}
         <BpkText className={c('details__stops', stopsClassName)}>{stopsInfo}</BpkText>
       </div>
     </div>

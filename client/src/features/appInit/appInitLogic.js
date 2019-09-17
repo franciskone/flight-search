@@ -1,5 +1,4 @@
 import { createLogic } from 'redux-logic';
-import moment from 'moment';
 
 import { appInitActionType } from './appInitActions';
 import { flightSearchActions } from '../flightSearch';
@@ -7,12 +6,14 @@ import { flightSearchActions } from '../flightSearch';
 const initLogic = createLogic({
   type: appInitActionType.INIT,
   
-  process({ getState, action }, dispatch, done) {
+  process({ UTIL }, dispatch, done) {
+    const { nextMonday, nextTuesday } = UTIL.getNextDayMondayAndTuesday();
+    
     const searchParams = {
       originPlace: 'EDI-sky',
       destinationPlace: 'LOND-sky',
-      outboundDate: moment().day(8).format('YYYY-MM-DD'),
-      inboundDate: moment().day(9).format('YYYY-MM-DD'),
+      outboundDate: nextMonday,
+      inboundDate: nextTuesday,
       adults: 1,
     };
 

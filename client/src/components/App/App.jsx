@@ -9,7 +9,7 @@ import appInitAction from '../../features/appInit/appInitActions';
 
 const c = className => STYLES[className] || 'UNKNOWN';
 
-const App = ({ appInit }) => {
+export const App = ({ appInit }) => {
   useEffect(() => {
     appInit();
   }, []);
