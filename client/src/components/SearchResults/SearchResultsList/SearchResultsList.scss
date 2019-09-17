@@ -1,13 +1,13 @@
 @import '~bpk-mixins';
 
 .SearchResultsList {
-  padding: $bpk-spacing-sm;
-  max-width: 960px;
+  max-width: $bpk-spacing-base * 30;
   margin: auto;
+  padding: $bpk-spacing-sm;
 }
 
 .SeeMore {
   display: flex;
-  justify-content: center;
   margin-bottom: $bpk-spacing-base;
+  justify-content: center;
 }

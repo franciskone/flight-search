@@ -2,15 +2,15 @@
 
 .SearchResultsError {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   min-height: 15rem;
   margin: $bpk-spacing-md $bpk-spacing-sm;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   &Message {
-    color: $bpk-color-red-500;
     margin-bottom: $bpk-spacing-md;
+    color: $bpk-color-red-500;
     text-align: center;
   }
 }

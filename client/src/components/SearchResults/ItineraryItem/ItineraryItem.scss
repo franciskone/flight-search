@@ -6,8 +6,8 @@
 
   .flight {
     display: flex;
-    justify-content: space-between;
     margin-bottom: $bpk-spacing-md;
+    justify-content: space-between;
 
     .route {
       display: flex;
@@ -20,11 +20,10 @@
 
       .airport {
         display: flex;
-        flex-direction: column;
         width: $bpk-font-size-base * 5;
+        flex-direction: column;
 
         &--destination {
-
           align-items: flex-end;
         }
 
@@ -74,9 +73,11 @@
       display: flex;
       flex-direction: column;
     }
+
     &__price {
       line-height: $bpk-text-base-line-height;
     }
+
     &__agent {
       color: $bpk-color-gray-300;
     }

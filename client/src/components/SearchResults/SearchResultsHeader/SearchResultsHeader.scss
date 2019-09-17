@@ -1,21 +1,21 @@
 @import '~bpk-mixins';
 
 .SearchResultsHeader {
+  padding: $bpk-spacing-sm;
   background-color: $bpk-color-blue-500;
   color: $bpk-color-white;
-  padding: $bpk-spacing-sm;
 
   &__top {
     display: flex;
     align-items: center;
     font-size: $bpk-font-size-root * 3.4;
-    line-height: initial;
+    line-height: $bpk-font-size-root * 1.2;
     text-transform: uppercase;
   }
 
   &__arrow {
+    margin: .5rem;
     fill: currentColor;
-    margin: 0.5rem;
   }
 
   &__bottom {
