@@ -1,4 +1,4 @@
 import classNames from 'classnames/bind';
 
 export const styleGetter = style => (...names) =>
-  classNames.bind(style)(...names); // TODO Franciskone: add test
+  classNames.bind(style)(...names);

@@ -2,7 +2,6 @@ import { createLogic } from 'redux-logic';
 import flightSearchActions, { flightSearchActionType } from './flightSearchActions';
 import { flightSearchTryAgainParamsSelector } from './flightSearchSelectors';
 
-// TODO Franciskone: add tests
 const flightSearchLogic = createLogic({
   type: flightSearchActionType.SEARCH,
   
@@ -13,7 +12,6 @@ const flightSearchLogic = createLogic({
         done();
       })
       .catch(() => {
-        // TODO Franciskone: manage error properly in UI and reducer
         dispatch(flightSearchActions.searchError('Error retrieving itinerary data'));
         done();
       });

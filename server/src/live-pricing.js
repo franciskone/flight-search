@@ -6,7 +6,7 @@ const querystring = require('querystring');
 
 const config = require('./config');
 
-const mockSearch = require('./mock/search'); // TODO Franciskone: DELETE
+const mockSearch = require('./mock/search');
 
 const PRICING_URL = `${config.skyscannerApi}apiservices/pricing/v1.0`;
 const POLL_DELAY = 1000;

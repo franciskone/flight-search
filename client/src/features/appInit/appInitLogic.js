@@ -5,7 +5,7 @@ import { flightSearchActions } from '../flightSearch';
 
 const initLogic = createLogic({
   type: appInitActionType.INIT,
-  
+  // TODO NOW franciskone: add test
   process({ UTIL }, dispatch, done) {
     const { nextMonday, nextTuesday } = UTIL.getNextDayMondayAndTuesday();
     

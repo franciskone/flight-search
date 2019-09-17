@@ -1,4 +1,3 @@
-// TODO Franciskone: add tests
 import { FLIGHT_SEARCH_REDUCER_NAME } from './flightSearchReducer';
 
 const FALLBACK_VALUE = '---';

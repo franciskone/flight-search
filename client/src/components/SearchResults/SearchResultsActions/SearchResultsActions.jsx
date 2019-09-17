@@ -10,8 +10,8 @@ import STYLE from './SearchResultsActions.scss';
 
 const c = styleGetter(STYLE);
 
-const actionItemOnKeyPress = action => evt =>
-  evt.charCode === 13 && action(); // TODO Franciskone: add test
+export const actionItemOnKeyPress = action => evt =>
+  evt.charCode === 13 && action();
 
 const ActionItem = ({
   action, children, isLast = false,
