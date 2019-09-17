@@ -15,7 +15,7 @@ export const actionItemOnKeyPress = action => evt =>
 
 const ActionItem = ({
   action, children, isLast = false,
-}) => ( // TODO Franciskone: add snapshot test
+}) => (
   <div
     className={c(
       'SearchResultsActions__action-item',
@@ -43,7 +43,7 @@ const AlignedPriceAlert = withAlignment(
   BpkLargePriceAlertIcon, lineHeightLg, iconSizeLg,
 );
 
-const SearchResultsActions = () => ( // TODO Franciskone: add snapshot test
+const SearchResultsActions = () => (
   <div className={c('SearchResultsActions')}>
     <ActionItem action={() => fakeOnClick('Filter')}>
       Filter

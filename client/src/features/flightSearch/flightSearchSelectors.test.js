@@ -1,7 +1,7 @@
 import { flightSearchItinerariesForResultsSelector } from './flightSearchSelectors';
 import { FLIGHT_SEARCH_REDUCER_NAME } from './index';
 
-const testState = {
+export const testStateWithItinerary = {
   [FLIGHT_SEARCH_REDUCER_NAME]: {
     itineraries: [
       {
@@ -213,7 +213,7 @@ const testState = {
   },
 };
 
-const flightSearchItinerariesSelectorOutput = [
+export const flightSearchItinerariesSelectorOutput = [
   {
     id: '11235-1909211935--32480-0-13554-1909212100_13771-1909280705--32356-0-11235-1909280825',
     legs: [
@@ -253,7 +253,7 @@ const flightSearchItinerariesSelectorOutput = [
 
 describe('flight search selectors', () => {
   it('flightSearchLegByIdForResultsSelector', () => {
-    expect(flightSearchItinerariesForResultsSelector(testState))
+    expect(flightSearchItinerariesForResultsSelector(testStateWithItinerary))
       .toEqual(flightSearchItinerariesSelectorOutput);
   });
 });

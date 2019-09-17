@@ -9,6 +9,7 @@ import appInitAction from '../../features/appInit/appInitActions';
 
 const c = className => STYLES[className] || 'UNKNOWN';
 
+// TODO Franciskone: check if needed to remove "redux-mock-store": "^1.5.3"
 export const App = ({ appInit }) => {
   useEffect(() => {
     appInit();

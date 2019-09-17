@@ -3,19 +3,23 @@ import ReactDOM from 'react-dom';
 import ShallowRenderer from 'react-test-renderer/shallow';
 
 import { App } from './App';
+import { WithStore } from '../../store';
 
-// TODO Franciskone: add https://github.com/dmitry-zaets/redux-mock-store
+
 describe('App', () => {
   it('should render without crashing', () => {
     const div = document.createElement('div');
 
-    ReactDOM.render(<App />, div);
+    ReactDOM.render(
+      <WithStore>
+        <App appInit={() => null} />
+      </WithStore>
+      , div);
   });
 
   it('should render correctly', () => {
     const renderer = new ShallowRenderer();
-    renderer.render(<App />);
-
+    renderer.render(<App appInit={() => null} />);
     expect(renderer.getRenderOutput()).toMatchSnapshot();
   });
 });

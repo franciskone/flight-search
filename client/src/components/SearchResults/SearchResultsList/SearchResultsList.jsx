@@ -10,7 +10,7 @@ import STYLE from './SearchResultsList.scss';
 
 const c = styleGetter(STYLE);
 
-const SearchResultsList = ({ elements }) => (
+export const SearchResultsFullListPresentation = ({ elements }) => (
   <div className={c('SearchResultsList')}>
     {
       elements.map(({
@@ -27,14 +27,14 @@ const SearchResultsList = ({ elements }) => (
   </div>
 );
 
-SearchResultsList.propTypes = {
+SearchResultsFullListPresentation.propTypes = {
   elements: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string.isRequired,
     ...ItineraryType,
   })).isRequired,
 };
 
-const InfiniteList = withInfiniteScroll(SearchResultsList);
+const InfiniteList = withInfiniteScroll(SearchResultsFullListPresentation);
 
 const SeeMoreButton = ({ onSeeMoreClick }) => (
   <div className={c('SeeMore')}>

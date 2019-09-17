@@ -7,12 +7,16 @@ exports[`SearchResultsError should render correctly 1`] = `
 >
   <span
     className="bpk-text bpk-text--xl SearchResultsErrorMessage"
-  />
+  >
+    test message
+  </span>
   <button
     className="bpk-button bpk-button--large"
     disabled={false}
-    onClick={null}
+    onClick={[Function]}
     type="button"
-  />
+  >
+    test label
+  </button>
 </div>
 `;
