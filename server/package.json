@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node ./src/server.js",
     "start:debug": "node --inspect ./src/server.js",
-    "start:watch": "APIKEY=MOCK nodemon ./src/server.js",
+    "start:watch": "nodemon ./src/server.js",
     "start:mock": "APIKEY=MOCK node ./src/server.js",
     "start:mock:watch": "APIKEY=MOCK nodemon ./src/server.js",
     "test": "echo 'There are no server tests yet...'",
