@@ -69,7 +69,7 @@ const FlightSummary = ({
       </div>
       
       <div className={c('details')}>
-        <BpkText className={c('details__duration')}>{minutesToTimeFormat(duration)}</BpkText> {/* TODO Franciskone: add formatting for timing */}
+        <BpkText className={c('details__duration')}>{minutesToTimeFormat(duration)}</BpkText>
         <BpkText className={c('details__stops', stopsClassName)}>{stopsInfo}</BpkText>
       </div>
     </div>

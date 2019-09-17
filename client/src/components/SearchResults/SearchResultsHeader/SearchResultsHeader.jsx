@@ -23,7 +23,7 @@ const SearchResultsHeader = ({
   <div className={c('SearchResultsHeader')}>
     <div className={c('SearchResultsHeader__top')}>
       {origin}
-      <BpkLongArrowRight className={c('SearchResultsHeader__arrow')} /> { /* TODO Franciskone: make the icon a little bigger  */}
+      <BpkLongArrowRight className={c('SearchResultsHeader__arrow')} />
       {destination}
     </div>
 

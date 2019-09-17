@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     font-size: $bpk-font-size-root * 3.4;
-    line-height: initial; // TODO Franciskone: spike if we can avoid this
+    line-height: initial;
     text-transform: uppercase;
   }
 
@@ -19,7 +19,7 @@
   }
 
   &__bottom {
-    font-size: $bpk-font-size-base * 1.2; // TODO Franciskone: find a better way to get this font-sizes
+    font-size: $bpk-font-size-base * 1.2;
     font-weight: 300;
   }
 }
