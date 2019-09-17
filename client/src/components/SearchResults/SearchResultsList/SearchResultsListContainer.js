@@ -1,4 +1,3 @@
-import React from 'react';
 import { connect } from 'react-redux';
 import SearchResultsList from './SearchResultsList';
 import { flightSearchItinerariesForResultsSelector } from '../../../features/flightSearch';

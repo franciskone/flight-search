@@ -59,7 +59,6 @@ const FlightSummary = ({
           className={c('carrier-logo')}
           src={`https://logos.skyscnr.com/images/airlines/favicon/${carrier}.png` /* TODO Franciskone move url concat in util */}
           alt="carrier logo"
-          aria-hidden
         />
         
         <AirportInfo
