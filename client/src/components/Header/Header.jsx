@@ -1,6 +1,6 @@
 import React from 'react';
+import BpkLargeMenuIcon from 'bpk-component-icon/lg/menu';
 
-import burgerMenuIcon from './burgerMenuIcon.svg';
 import logo from './logo.svg';
 import STYLES from './Header.scss';
 import { fakeOnClick, styleGetter } from '../../util';
@@ -13,9 +13,11 @@ const Header = () => (
       <span className={c('Header__hidden-text')}>Skyscanner</span>
       <img className={c('Header__logo-image')} alt="Skyscanner" src={logo} />
     </a>
-    <button onClick={() => fakeOnClick('Menu icon')}>
-      {/* TODO Franciskone: switch to bkp-icon 'menu' */}
-      <img className={c('Header__menu-image')} alt="menu" src={burgerMenuIcon} />
+    <button
+      className={c('Header__menu-button')}
+      onClick={() => fakeOnClick('Menu icon')}
+    >
+      <BpkLargeMenuIcon className={c('Header__menu-icon')} />
     </button>
   </header>
 );

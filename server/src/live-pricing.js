@@ -80,7 +80,7 @@ const getResults = async (location) => {
   }
 };
 
-const USE_FAKE_DATA = true;
+const USE_FAKE_DATA = true; // TODO Franciskone: use a value from env Vars
 const search = async (params) => {
   try {
     // TODO Franciskone: DELETE code in the If statement and use only the ELSE code

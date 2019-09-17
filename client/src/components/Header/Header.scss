@@ -18,8 +18,11 @@
     vertical-align: top;
   }
 
-  &__menu-image {
-    height: $bpk-spacing-lg;
-    vertical-align: top;
+  &__menu-button {
+    display: flex;
+  }
+
+  &__menu-icon {
+    fill: $bpk-color-blue-500;
   }
 }
