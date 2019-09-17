@@ -8,58 +8,58 @@
     display: flex;
     margin-bottom: $bpk-spacing-md;
     justify-content: space-between;
+  }
 
-    .route {
-      display: flex;
-      align-items: center;
+  .route {
+    display: flex;
+    align-items: center;
+  }
 
-      .carrier-logo {
-        width: $bpk-spacing-xl;
-        margin-right: $bpk-spacing-md;
-      }
+  .carrier-logo {
+    width: $bpk-spacing-xl;
+    margin-right: $bpk-spacing-md;
+  }
 
-      .airport {
-        display: flex;
-        width: $bpk-font-size-base * 5;
-        flex-direction: column;
+  .airport {
+    display: flex;
+    width: $bpk-font-size-base * 5;
+    flex-direction: column;
 
-        &--destination {
-          align-items: flex-end;
-        }
-
-        &__time {
-          justify-self: flex-start;
-        }
-
-        &__name {
-          color: $bpk-color-gray-400;
-        }
-      }
-
-      .arrow {
-        align-self: center;
-        fill: $bpk-color-gray-300;
-      }
+    &--destination {
+      align-items: flex-end;
     }
 
-    .details {
-      text-align: end;
+    &__time {
+      justify-self: flex-start;
+    }
 
-      &__duration {
-        display: block;
-        color: $bpk-color-gray-400;
+    &__name {
+      color: $bpk-color-gray-400;
+    }
+  }
+
+  .arrow {
+    align-self: center;
+    fill: $bpk-color-gray-300;
+  }
+
+  .details {
+    text-align: end;
+
+    &__duration {
+      display: block;
+      color: $bpk-color-gray-400;
+    }
+
+    &__stops {
+      display: block;
+
+      &--single {
+        color: $bpk-color-green-500;
       }
 
-      &__stops {
-        display: block;
-
-        &--single {
-          color: $bpk-color-green-500;
-        }
-
-        &--multiple {
-          color: $bpk-color-red-500;
-        }
+      &--multiple {
+        color: $bpk-color-red-500;
       }
     }
   }

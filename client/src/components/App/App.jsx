@@ -17,7 +17,7 @@ export const App = ({ appInit }) => {
   return (
     <div className={c('App')}>
       <Header />
-      <main className={c('App__main')}>
+      <main>
         <SearchResults />
       </main>
     </div>
