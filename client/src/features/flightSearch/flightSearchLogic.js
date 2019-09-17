@@ -20,10 +20,10 @@ const flightSearchLogic = createLogic({
 
 const flightSearchTryAgainLogic = createLogic({
   type: flightSearchActionType.SEARCH_TRY_AGAIN,
-  process({ getState, action }, dispatch, done) {
+  process({ getState }, dispatch, done) {
     const params = flightSearchTryAgainParamsSelector(getState());
     
-    params
+    params // eslint-disable-line no-unused-expressions
       ? dispatch(flightSearchActions.search(params))
       : dispatch(flightSearchActions.searchError("We don't have you search parameters anymore :-("));
     

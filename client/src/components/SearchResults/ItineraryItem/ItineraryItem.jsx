@@ -33,7 +33,7 @@ AirportInfo.defaultProps = {
 
 
 const FlightSummary = ({
-  id, carrier, origin, destination, duration, stops,
+  carrier, origin, destination, duration, stops,
 }) => {
   let stopsInfo = 'Direct';
   if (stops > 0) {
@@ -77,7 +77,6 @@ const FlightSummary = ({
 };
 
 const LegType = {
-  id: PropTypes.string.isRequired,
   carrier: PropTypes.string.isRequired,
   duration: PropTypes.number.isRequired,
   stops: PropTypes.number.isRequired,
@@ -88,7 +87,7 @@ FlightSummary.propTypes = LegType;
 
 const onClickHandler = () => fakeOnClick('Select');
 const ItineraryItem = ({
-  legs, price, agent, id,
+  legs, price, agent,
 }) => ( // TODO Franciskone: add tests
   <BpkCard className={c('ItineraryItem')}>
     {
@@ -128,8 +127,10 @@ const ItineraryItem = ({
 
 
 export const ItineraryType = {
-  id: PropTypes.string.isRequired,
-  legs: PropTypes.arrayOf(PropTypes.shape(LegType)).isRequired,
+  legs: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    ...LegType,
+  })).isRequired,
   price: PropTypes.number.isRequired,
   agent: PropTypes.string.isRequired,
 };

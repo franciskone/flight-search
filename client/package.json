@@ -24,6 +24,7 @@
     "bpk-mixins": "^17.24.8",
     "bpk-stylesheets": "^3.3.14",
     "bpk-tokens": "^27.10.0",
+    "eslint-plugin-skyscanner-dates": "^1.0.9",
     "react-test-renderer": "^16.9.0",
     "redux-logic-test": "^2.0.0"
   },

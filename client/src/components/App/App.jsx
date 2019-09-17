@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import STYLES from './App.scss';
 import Header from '../Header';
-import SearchResults from '../SearchResults/';
+import SearchResults from '../SearchResults';
 import { WithStore } from '../../store';
 import appInitAction from '../../features/appInit/appInitActions';
 

@@ -18,7 +18,6 @@ const SearchResultsList = ({ elements }) => (
       }) => (
         <ItineraryItem
           key={id}
-          id={id}
           agent={agent}
           legs={legs}
           price={price}
@@ -29,7 +28,10 @@ const SearchResultsList = ({ elements }) => (
 );
 
 SearchResultsList.propTypes = {
-  elements: PropTypes.arrayOf(PropTypes.shape(ItineraryType)).isRequired,
+  elements: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    ...ItineraryType,
+  })).isRequired,
 };
 
 const InfiniteList = withInfiniteScroll(SearchResultsList);

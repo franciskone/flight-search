@@ -4,7 +4,7 @@ import {
   flightSearchQueryDestinationCodeSelector,
   flightSearchQueryOriginCodeSelector, flightSearchQueryPassengersCabinClassSelector,
   flightSearchQueryPassengersNumberSelector,
-} from '../../../features/flightSearch'
+} from '../../../features/flightSearch';
 
 
 const mapStateToProps = state => ({
