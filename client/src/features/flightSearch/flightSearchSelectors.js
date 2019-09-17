@@ -8,8 +8,6 @@ export const flightSearchIsLoadingSelector = state => flightSearchState(state).i
 export const flightSearchQuerySelector = state => flightSearchState(state).query;
 const flightSearchPlaceSelector = (state, placeId) => flightSearchState(state).placesById[placeId];
 
-// TODO Franciskone: convert to reselectors if repetitive expensive calculation
-
 // Queries
 export const flightSearchQueryOriginCodeSelector = (state) => {
   const { OriginPlace } = flightSearchQuerySelector(state);

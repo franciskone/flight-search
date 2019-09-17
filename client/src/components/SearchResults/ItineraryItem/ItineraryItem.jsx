@@ -5,7 +5,7 @@ import BpkText from 'bpk-component-text';
 import BpkButton from 'bpk-component-button';
 import BpkLongArrowRight from 'bpk-component-icon/lg/long-arrow-right';
 
-import {fakeOnClick, getTimeFromDate, minutesToTimeFormat, styleGetter} from '../../../util'
+import { airlineFaviconUrl, fakeOnClick, getTimeFromDate, minutesToTimeFormat, styleGetter } from '../../../util';
 import STYLE from './ItineraryItem.scss';
 
 const c = styleGetter(STYLE);
@@ -50,7 +50,7 @@ const FlightSummary = ({
         
         <img
           className={c('carrier-logo')}
-          src={`https://logos.skyscnr.com/images/airlines/favicon/${carrier}.png` /* TODO Franciskone move url concat in util */}
+          src={airlineFaviconUrl(carrier)}
           alt="carrier logo"
         />
         

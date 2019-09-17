@@ -47,6 +47,7 @@ function searchSuccessCase(state, action) {
     ...state,
     ...action.payload,
     isLoading: false,
+    error: null,
   };
 }
 

@@ -1,4 +1,4 @@
-const API_ROOT = 'http://localhost:4000/api';
+import { API_ROOT_URL } from '../constants';
 
 export const flightSearch = ({
   originPlace,
@@ -13,6 +13,6 @@ export const flightSearch = ({
   + `&inboundDate=${inboundDate}`
   + `&adults=${adults}`;
   
-  return fetch(`${API_ROOT}/search?${query}`)
+  return fetch(`${API_ROOT_URL}/search?${query}`)
     .then(response => response.json());
 };
