@@ -1,6 +1,6 @@
-function reduceById(list) {
+function reduceByKey(list, key = 'Id') {
   const listById = {};
-  list.forEach((item) => { listById[item.Id] = item; });
+  list.forEach((item) => { listById[item[key]] = item; });
   
   return listById;
 }
@@ -12,12 +12,12 @@ const mapItineraries = itineraries => itineraries.map(
 );
 
 const filterSearchResultsData = (rawData) => {
-  const legsById = reduceById(rawData.Legs);
-  const segmentsById = reduceById(rawData.Segments);
-  const carriersById = reduceById(rawData.Carriers);
-  const agentsById = reduceById(rawData.Agents);
-  const placesById = reduceById(rawData.Places);
-  const currenciesById = reduceById(rawData.Currencies);
+  const legsById = reduceByKey(rawData.Legs, 'Id');
+  const segmentsById = reduceByKey(rawData.Segments, 'Id');
+  const carriersById = reduceByKey(rawData.Carriers, 'Id');
+  const agentsById = reduceByKey(rawData.Agents, 'Id');
+  const placesById = reduceByKey(rawData.Places, 'Id');
+  const currenciesById = reduceByKey(rawData.Currencies, 'Code');
   
   return {
     query: {
