@@ -1,3 +1,5 @@
+import { actionCreator } from '../../util';
+
 const prefix = 'appInit';
 
 export const appInitActionType = {
@@ -10,8 +12,5 @@ const appInitAction = {
 export default appInitAction;
 
 function init() {
-  return {
-    type: appInitActionType.INIT,
-    paypload: null,
-  };
+  return actionCreator(appInitActionType.INIT);
 }

@@ -7,7 +7,7 @@ import { FLIGHT_SEARCH_REDUCER_NAME } from './index';
 describe('flight search logic', () => {
   describe('flightSearchLogic', () => {
     const createStore = flightSearchMock => createMockStore({
-      logic: flightSearchLogic, // default: []
+      logic: flightSearchLogic,
       injectedDeps: {
         API: {
           flightSearch: flightSearchMock,
