@@ -8,6 +8,11 @@ export const flightSearchIsLoadingSelector = state => flightSearchState(state).i
 export const flightSearchQuerySelector = state => flightSearchState(state).query;
 const flightSearchPlaceSelector = (state, placeId) => flightSearchState(state).placesById[placeId];
 
+// Error
+export const flightSearchErrorMessageSelector = state => flightSearchState(state).error;
+export const flightSearchTryAgainParamsSelector =
+  state => flightSearchState(state).searchTryAgainParams;
+
 // Queries
 export const flightSearchQueryOriginCodeSelector = (state) => {
   const { OriginPlace } = flightSearchQuerySelector(state);

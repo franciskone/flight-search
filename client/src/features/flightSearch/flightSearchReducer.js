@@ -1,6 +1,8 @@
 import { flightSearchActionType } from './flightSearchActions';
 
-const initData = {
+const searchTryAgainParams = null;
+
+const initItineraryData = {
   query: {},
   legsById: {},
   segmentsById: {},
@@ -14,7 +16,8 @@ const initData = {
 const initState = {
   isLoading: false,
   error: null,
-  ...initData,
+  searchTryAgainParams,
+  ...initItineraryData,
 };
 
 // TODO Franciskone: add tests
@@ -34,9 +37,10 @@ export default flightSearchReducer;
 export const FLIGHT_SEARCH_REDUCER_NAME = 'flightSearch';
 
 
-function searchCase(state) {
+function searchCase(state, action) {
   return {
     ...state,
+    searchTryAgainParams: action.payload,
     isLoading: true,
     error: null,
   };
@@ -46,6 +50,7 @@ function searchSuccessCase(state, action) {
   return {
     ...state,
     ...action.payload,
+    searchTryAgainParams: initState.searchTryAgainParams,
     isLoading: false,
     error: null,
   };
@@ -54,7 +59,7 @@ function searchSuccessCase(state, action) {
 function searchErrorCase(state, action) {
   return {
     ...state,
-    ...initData,
+    ...initItineraryData,
     isLoading: false,
     error: action.payload,
   };

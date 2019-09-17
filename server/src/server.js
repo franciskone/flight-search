@@ -39,7 +39,7 @@ app.get('/api/search', async (req, res) => {
       inboundDate,
       adults,
     };
-
+    
     const rawResults = await livePricing.search(reqParamsForSession);
     res.json(filterSearchResultsData(rawResults));
   } catch (err) {

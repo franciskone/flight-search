@@ -14,5 +14,9 @@ export const flightSearch = ({
   + `&adults=${adults}`;
   
   return fetch(`${API_ROOT_URL}/search?${query}`)
-    .then(response => response.json());
+    .then((response) => {
+      if (response.status !== 200) throw new Error('Error retrieving itinerary data');
+      
+      return response.json();
+    });
 };

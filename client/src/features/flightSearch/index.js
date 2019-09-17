@@ -9,3 +9,5 @@ export { flightSearchQueryPassengersNumberSelector } from './flightSearchSelecto
 export { flightSearchQueryPassengersCabinClassSelector } from './flightSearchSelectors';
 export { flightSearchHasQuerySelector } from './flightSearchSelectors';
 export { flightSearchItinerariesForResultsSelector } from './flightSearchSelectors';
+export { flightSearchErrorMessageSelector } from './flightSearchSelectors';
+export { flightSearchTryAgainParamsSelector } from './flightSearchSelectors';
