@@ -2,7 +2,7 @@ import flightSearchReducer, { flightSearchReducerInitState, initItineraryData } 
 import { flightSearchActionType } from './flightSearchActions';
 
 describe('flightSearchReducer', () => {
-  it('searchCase', () => {
+  it('search case', () => {
     const testAction = {
       type: flightSearchActionType.SEARCH,
       payload: {
@@ -17,13 +17,13 @@ describe('flightSearchReducer', () => {
       error: null,
     };
     
-    expect(
-      flightSearchReducer(flightSearchReducerInitState, testAction),
+    expect(flightSearchReducer(
+      flightSearchReducerInitState,
       testAction,
-    ).toEqual(testFinalState);
+    )).toEqual(testFinalState);
   });
 
-  it('searchSuccessCase', () => {
+  it('search success case', () => {
     const testInitState = {
       ...flightSearchReducerInitState,
       searchTryAgainParams: { test: 'a' },
@@ -46,13 +46,13 @@ describe('flightSearchReducer', () => {
       error: null,
     };
 
-    expect(
-      flightSearchReducer(testInitState, testAction),
+    expect(flightSearchReducer(
+      testInitState,
       testAction,
-    ).toEqual(testFinalState);
+    )).toEqual(testFinalState);
   });
 
-  it('searchErrorCase', () => {
+  it('search error case', () => {
     const testInitState = {
       ...flightSearchReducerInitState,
       searchTryAgainParams: { test: 'a' },
@@ -72,9 +72,16 @@ describe('flightSearchReducer', () => {
       error: testAction.payload,
     };
     
-    expect(
-      flightSearchReducer(testInitState, testAction),
+    expect(flightSearchReducer(
+      testInitState,
       testAction,
-    ).toEqual(testFinalState);
+    )).toEqual(testFinalState);
+  });
+  
+  it('default case', () => {
+    expect(flightSearchReducer(
+      { a: 'test' },
+      { type: 'UnknownAction', payload: null },
+    )).toEqual({ a: 'test' });
   });
 });
