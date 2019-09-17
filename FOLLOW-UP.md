@@ -4,7 +4,11 @@
 
 ### Q) What is the command to start the server?
 
-(Default) `APIKEY=<key> npm run server`
+ * `npm run client` to run client
+ * `APIKEY=<key> npm run server` to run server
+ * `APIKEY=<key> npm run server:watch` to run server using nodemon
+ * `npm run server:mock` to run server with mock data
+ * `npm run server:mock:watch` to run server with mock data using nodemon
 
 ---
 
