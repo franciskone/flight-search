@@ -9,7 +9,6 @@ export const flightSearchActionType = {
   SEARCH_TRY_AGAIN: `${prefix}/SEARCH_TRY_AGAIN`,
 };
 
-// TODO Franciskone: add tests
 const flightSearchAction = {
   search,
   searchSuccess,

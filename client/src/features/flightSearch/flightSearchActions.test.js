@@ -13,19 +13,19 @@ const {
   searchTryAgain,
 } = flightSearchAction;
 
+export const flightSearchParams = {
+  originPlace: 'originPlace test',
+  destinationPlace: 'destinationPlace test',
+  outboundDate: 'outboundDate test',
+  inboundDate: 'inboundDate test',
+  adults: 'adults test',
+};
+
 describe('flightSearchActions', () => {
   it('search', () => {
-    const payload = {
-      originPlace: 'originPlace test',
-      destinationPlace: 'destinationPlace test',
-      outboundDate: 'outboundDate test',
-      inboundDate: 'inboundDate test',
-      adults: 'adults test',
-    };
-    
-    expect(search(payload)).toEqual({
+    expect(search(flightSearchParams)).toEqual({
       type: SEARCH,
-      payload,
+      payload: flightSearchParams,
     });
   });
   

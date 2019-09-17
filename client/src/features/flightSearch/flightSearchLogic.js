@@ -20,7 +20,7 @@ const flightSearchLogic = createLogic({
   },
 });
 
-const flightSearchtryAgainLogic = createLogic({
+const flightSearchTryAgainLogic = createLogic({
   type: flightSearchActionType.SEARCH_TRY_AGAIN,
   process({ getState, action }, dispatch, done) {
     const params = flightSearchTryAgainParamsSelector(getState());
@@ -35,5 +35,5 @@ const flightSearchtryAgainLogic = createLogic({
 
 export default [
   flightSearchLogic,
-  flightSearchtryAgainLogic,
+  flightSearchTryAgainLogic,
 ];

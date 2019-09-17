@@ -4,7 +4,7 @@ import { middleWares } from './middleWares';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose; // eslint-disable-line
 
-const rootReducer = combineReducers({
+export const rootReducer = combineReducers({
   [FLIGHT_SEARCH_REDUCER_NAME]: flightSearchReducer,
 });
 
