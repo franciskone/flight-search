@@ -20,7 +20,6 @@ export const flightSearchReducerInitState = {
   ...initItineraryData,
 };
 
-// TODO Franciskone: add tests
 const flightSearchReducer = (state = flightSearchReducerInitState, action) => {
   const reducers = {
     [flightSearchActionType.SEARCH]: searchCase,
