@@ -20,6 +20,4 @@ describe('a11y util', () => {
     action({ charCode: 0 });
     expect(testAction.mock.calls.length).toBe(1);
   });
-  
-  
 });

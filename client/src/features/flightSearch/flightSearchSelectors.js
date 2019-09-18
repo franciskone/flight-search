@@ -6,7 +6,7 @@ const flightSearchState = state => state[FLIGHT_SEARCH_REDUCER_NAME];
 export const flightSearchIsLoadingSelector = state => flightSearchState(state).isLoading;
 export const flightSearchQuerySelector = state => flightSearchState(state).query;
 const flightSearchPlaceSelector = (state, placeId) => flightSearchState(state).placesById[placeId];
-const flightSearchCurrencySelector = (state) => flightSearchState(state).currenciesById;
+const flightSearchCurrencySelector = state => flightSearchState(state).currenciesById;
 
 // Error
 export const flightSearchErrorMessageSelector = state => flightSearchState(state).error;
