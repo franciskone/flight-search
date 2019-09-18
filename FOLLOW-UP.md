@@ -32,9 +32,9 @@ From the root folder
 # General:
 
 ### Q) How long, in hours, did you spend on the test?
-I spent around 30 hours
-* 12 hours on Saturday 14/09/2019
-* 12 hours on Sunday 15/09/2019
+I spent around 24 hours
+* 9 hours on Saturday 14/09/2019
+* 9 hours on Sunday 15/09/2019
 * around 6 hours on tuesday 17/09/2019
 
 ### Q) If you had more time, what further improvements or new features would you add?
