@@ -3,7 +3,7 @@ import BpkLargeMenuIcon from 'bpk-component-icon/lg/menu';
 
 import logo from './logo.svg';
 import STYLES from './Header.scss';
-import { fakeOnClick, styleGetter } from '../../util';
+import { actionItemOnKeyPress, fakeOnClick, styleGetter } from '../../util';
 
 const c = styleGetter(STYLES);
 
@@ -13,12 +13,15 @@ const Header = () => (
       <span className={c('Header__hidden-text')}>Skyscanner</span>
       <img className={c('Header__logo-image')} alt="Skyscanner" src={logo} />
     </a>
-    <button
+    <div
+      tabIndex="0"
+      onKeyPress={actionItemOnKeyPress(() => fakeOnClick('Menu icon'))}
       className={c('Header__menu-button')}
+      role="button"
       onClick={() => fakeOnClick('Menu icon')}
     >
       <BpkLargeMenuIcon className={c('Header__menu-icon')} />
-    </button>
+    </div>
   </header>
 );
 

@@ -18,9 +18,12 @@ exports[`Header should render correctly 1`] = `
       src="logo.svg"
     />
   </a>
-  <button
+  <div
     className="Header__menu-button"
     onClick={[Function]}
+    onKeyPress={[Function]}
+    role="button"
+    tabIndex="0"
   >
     <svg
       className="Header__menu-icon"
@@ -38,6 +41,6 @@ exports[`Header should render correctly 1`] = `
         d="M20 8H4c-.6 0-1-.4-1-1s.4-1 1-1h16c.6 0 1 .4 1 1s-.4 1-1 1zm1 4c0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1s.4 1 1 1h16c.6 0 1-.4 1-1zm0 5c0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1s.4 1 1 1h16c.6 0 1-.4 1-1z"
       />
     </svg>
-  </button>
+  </div>
 </header>
 `;

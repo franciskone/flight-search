@@ -5,13 +5,10 @@ import { withAlignment } from 'bpk-component-icon';
 import { lineHeightLg, iconSizeLg } from 'bpk-tokens/tokens/base.es6';
 import BpkLargePriceAlertIcon from 'bpk-component-icon/lg/price-alerts';
 
-import { fakeOnClick, styleGetter } from '../../../util';
+import { actionItemOnKeyPress, fakeOnClick, styleGetter } from '../../../util';
 import STYLE from './SearchResultsActions.scss';
 
 const c = styleGetter(STYLE);
-
-export const actionItemOnKeyPress = action => evt =>
-  evt.charCode === 13 && action();
 
 const ActionItem = ({
   action, children, isLast = false,
