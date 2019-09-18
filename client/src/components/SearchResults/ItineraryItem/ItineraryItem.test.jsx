@@ -43,6 +43,7 @@ describe('ItineraryItem', () => {
         legs={legs}
         price={price}
         agent={agent}
+        currency="£"
       />,
     ).toJSON();
     

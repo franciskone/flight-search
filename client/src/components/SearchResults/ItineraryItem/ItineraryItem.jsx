@@ -87,7 +87,7 @@ LegSummary.propTypes = LegType;
 
 const onClickHandler = () => fakeOnClick('Select');
 const ItineraryItem = ({
-  legs, price, agent,
+  legs, price, agent, currency,
 }) => (
   <BpkCard className={c('ItineraryItem')}>
     {
@@ -113,7 +113,7 @@ const ItineraryItem = ({
     
     <div className={c('footer')}>
       <div className={c('footer__info')}>
-        <BpkText textStyle="xl" className={c('footer__price')}>{Math.round(price)} £</BpkText>
+        <BpkText textStyle="xl" className={c('footer__price')}>{Math.round(price)} {currency}</BpkText>
         <BpkText textStyle="base" className={c('footer__agent')}>{agent}</BpkText>
       </div>
       <BpkButton
@@ -135,7 +135,10 @@ export const ItineraryType = {
   price: PropTypes.number.isRequired,
   agent: PropTypes.string.isRequired,
 };
-ItineraryItem.propTypes = ItineraryType;
+ItineraryItem.propTypes = {
+  ...ItineraryType,
+  currency: PropTypes.string.isRequired,
+};
 
 export default ItineraryItem;
 

@@ -160,7 +160,8 @@ exports[`SearchResultsFullListPresentation should render correctly 1`] = `
           className="bpk-text bpk-text--xl footer__price"
         >
           321
-           £
+           
+          £
         </span>
         <span
           className="bpk-text bpk-text--base footer__agent"
